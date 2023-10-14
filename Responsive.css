@@ -1,0 +1,673 @@
+@media only screen and (max-width: 1000px) { 
+
+
+
+#starter{
+  background-color: #0000ff;
+    height: 100px;
+}
+.bot1{
+position: absolute;left: 40%;top: 1%;
+}
+.bot11{
+  position: absolute;left: 70%;top: 1%;
+  }
+.bot2{
+position: absolute;left: 55%;top: 1%;
+}
+#languages{
+display: none;
+} 
+#p1{
+padding-left:17px ;margin-top: 7px;color: white;font-size: small;
+}
+#needhelp{
+padding-left: 20px;padding-top: 10px;margin: 0;font-weight: bolder;color: white;font-size: small;
+}
+#ingo{
+height: 70px;width: 100px;position: absolute;top: 6%;left: 50px;
+}
+
+#dropID{
+display: none;
+}
+#span{
+display: block;
+position: absolute;
+right: 17%;
+top: 20%;
+}
+
+.sidenav {
+height: 100%;
+position: fixed;
+right: 0;
+z-index: 10000;
+top: 0;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+width: 0;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+#but1{
+text-align: left;padding-top: -10px;border: 0px solid rgb(244, 37, 72);
+height: 50px;width: 100%;background-color: rgb(66, 109, 9);color: white;margin-top: 10px;
+}
+#upcontainer{
+height: 70px;width: 200px;
+}
+
+.advancecontainer h2{
+font-size: 15px;
+}
+#p{
+display: none;
+}
+#imago{
+display: none;
+}
+
+#footer  h3 {
+font-size: 12px; 
+}
+
+
+body{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+#threes{
+display: none;
+}
+#repossessed{
+display: none;
+}
+#banner{
+height: 700px;
+margin:20px;
+
+}
+.div1{
+display: none;
+}
+.divs{
+display: none;
+}
+#heads{
+display: none;
+}
+#card{
+height: 300px;background-image: url(images/morning-coffee.jpg);background-repeat: no-repeat;background-size: cover;
+}
+#bannerunder{
+padding: 15px;width: 85%;height: 200px;margin-top: -97%;
+}
+#bannerunder2{
+display: none;
+}
+#hr{
+display: block;
+margin-top: 20%;
+}
+.linkers {
+display: none;
+}
+#tabulu,li, a{
+list-style-type: none;
+color: white;
+}
+
+#tabulu,tr,td {
+background-color: #0000ff;
+border: 1px solid white;
+}
+td{
+color: white;
+}
+th{
+color: rgb(122, 250, 3);
+}
+#apply{
+display: none;
+}
+#applycopy{
+margin-left: 8%;
+}
+
+#banner3{
+width: 100%;padding: 20px;margin-top: 0%;
+}
+#copy{
+display: none;
+}
+#copyofcopy{
+display: block;
+margin: 8%;
+}
+
+#double{
+display: none;
+}
+#upcontainer3{
+height: 210px;width: 200px !important;
+background-color: white;position: absolute !important;padding: 20px;
+left: 6% !important;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+}
+#colordiv{
+display: none;
+}
+#calculated{
+display: block;
+}
+#calculator{
+display: none;
+}
+#Features-and-benefits{
+display: block;
+}
+#upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute !important;
+left: 6% !important;top: 8% !important;  }
+#upcontainer4 h2 {
+font-size: medium;
+}
+
+#divbody{
+margin:0;
+padding: 10px;
+}
+#twos{
+display: none;
+}
+.password1{
+display: block;
+background-color: #0000ff;
+height: 400px;
+margin: 4%;
+padding-top: 20px;
+}
+
+#forgotten1{
+display: block;
+background-color:  gray;
+border-radius: 10px;
+border: 1px solid white;
+padding: 20px;
+}
+
+.topic> li{
+display: none;
+}
+.topper{
+display:block;
+margin: 10px;
+color: white;
+}
+
+.topper :hover{
+background-color: rgb(60, 235, 89);
+color: black;
+}
+
+#banner2{
+width: 100%;
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content:center;
+align-items: center;
+flex-wrap: wrap;
+align-content: space-around;
+}
+#banner2 > div{
+width: 100%;
+margin-right: 30px;
+height: 500px;
+}
+#dashbod1{
+display:none;
+width: 0;
+z-index: -1;
+}
+#dashbod2{
+width: 100%;
+}
+#btn11{
+width: 80px;
+}
+#btn22{
+width: 80px;
+}
+.test {
+position: absolute;
+height: 355px;
+width: 100%;
+top: 9%;
+left: 0;
+}
+#foots{
+height: 450px;
+}
+
+}
+
+@media only screen and (min-width: 1001px) {
+.sidenav{
+display: none;
+}
+#tabulu{
+display: none;
+}
+#applycopy{
+display: none;
+}
+#newdiv{
+display: none;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 600px) { 
+    #starter{
+      background-color: #0000ff;
+        height: 80px;
+    }
+  
+  
+.sidenav {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  z-index: 10000;
+  top: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  width: 0;
+
+}
+  .sidenav a {
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #but1{
+    text-align: left;padding-top: -10px;border: 0px solid rgb(244, 37, 72);
+    height: 50px;width: 100%;background-color: rgb(66, 109, 9);color: white;margin-top: 10px;
+  }
+  #tabulu{
+    display: none;
+  }
+  #applycopy{
+    display: none;
+  }
+ 
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  
+    #starter{
+      background-color: #0000ff;
+        height: 100px;
+    }
+.bot1{
+    position: absolute;left: 5%;top: 0.7%;
+}
+.bot2{
+    position: absolute;left: 25%;top: 0.7%;
+}
+.bot11{
+  position: absolute;left: 43%;top: 0.7%;
+}
+#google_translate_element{
+  position: absolute;left: 0%;top: 0.5%;
+}
+#languages{
+   display: none;
+  } 
+  #p1{
+    padding-left:17px ;margin-top: 7px;color: white;font-size: small;
+  }
+  #needhelp{
+    padding-left: 20px;padding-top: 10px;margin: 0;font-weight: bolder;color: white;font-size: small;
+  }
+  #ingo{
+    height: 70px;width: 100px;position: absolute;top: 6%;left: 50px;
+  }
+
+  #dropID{
+    display: none;
+  }
+#span{
+  display: block;
+  position: absolute;
+  right: 17%;
+  top: 20%;
+}
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  z-index: 10000;
+  top: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  width: 0;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#but1{
+  text-align: left;padding-top: -10px;border: 0px solid rgb(244, 37, 72);
+  height: 50px;width: 100%;background-color: rgb(66, 109, 9);color: white;margin-top: 10px;
+}
+#upcontainer{
+  height: 70px;width: 200px;
+}
+
+.advancecontainer h2{
+  font-size: 15px;
+}
+#p{
+  display: none;
+}
+#imago{
+  display: none;
+}
+
+#footer  h3 {
+font-size: 12px; 
+}
+
+
+body{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+#threes{
+  display: none;
+}
+#repossessed{
+  display: none;
+}
+#banner{
+  height: 700px;
+  margin:20px;
+
+}
+.div1{
+  display: none;
+}
+.divs{
+  display: none;
+}
+#heads{
+  display: none;
+}
+#card{
+  height: 300px;background-image: url(images/morning-coffee.jpg);background-repeat: no-repeat;background-size: cover;
+}
+#bannerunder{
+ padding: 15px;width: 85%;height: 200px;margin-top: -97%;
+}
+#bannerunder2{
+ display: none;
+}
+#hr{
+  display: block;
+  margin-top: 20%;
+}
+.linkers {
+ display: none;
+}
+#tabulu,li, a{
+  list-style-type: none;
+  color: white;
+}
+
+#tabulu,tr,td {
+background-color: #0000ff;
+border: 1px solid white;
+}
+td{
+  color: white;
+}
+th{
+  color: rgb(122, 250, 3);
+}
+#apply{
+  display: none;
+}
+#applycopy{
+  margin-left: 8%;
+}
+
+#banner3{
+  width: 100%;padding: 20px;margin-top: 0%;
+ }
+ #copy{
+  display: none;
+ }
+ #copyofcopy{
+  display: block;
+  margin: 8%;
+ }
+
+ #double{
+  display: none;
+ }
+ #upcontainer3{
+  height: 210px;width: 200px;
+background-color: white;position: absolute !important;padding: 20px;
+left: 6% !important;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+ }
+ #colordiv{
+  display: none;
+ }
+ #calculated{
+  display: block;
+ }
+ #calculator{
+  display: none;
+ }
+
+ #Features-and-benefits{
+  display: block;
+ }
+
+ #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute !important;
+  left: 6% !important;top: 8% !important;  }
+ #upcontainer4 h2 {
+font-size: medium;
+ }
+
+#divbody{
+  margin:0;
+  padding: 10px;
+}
+#twos{
+  display: none;
+}
+.password1{
+  display: block;
+  background-color: #0000ff;
+  height: 400px;
+  margin: 4%;
+  padding-top: 20px;
+}
+
+#forgotten1{
+  display: block;
+  background-color:  gray;
+  border-radius: 10px;
+border: 1px solid white;
+padding: 20px;
+}
+
+.topic> li{
+  display: none;
+}
+.topper{
+  display:block;
+  margin: 10px;
+  color: white;
+}
+
+.topper :hover{
+  background-color: rgb(60, 235, 89);
+  color: black;
+}
+
+#banner2{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+#banner2 > div{
+  width: 100%;
+  margin-right: 30px;
+  height: 500px;
+}
+#dashbod1{
+  display:none;
+  width: 0;
+  z-index: -1;
+}
+#dashbod2{
+  width: 100%;
+}
+#btn11{
+  width: 80px;
+}
+#btn22{
+  width: 80px;
+}
+.test {
+  position: absolute;
+  height: 355px;
+  width: 100%;
+  top: 6.5%;
+  left: 0;
+}
+#foots{
+  height: 450px;
+}
+
+#input {
+  width: 50%;
+}
+.input {
+  width: 50%;
+}
+
+.divs1{
+  height: 150px;
+  width: 50%;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+.divss1{
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+.div11{
+  height: 260px;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 5%;
+}
+}
+
+@media only screen and (min-width: 1001px) {
+  .sidenav{
+    display: none;
+  }
+  #tabulu{
+    display: none;
+  }
+  #applycopy{
+    display: none;
+  }
+  #newdiv{
+    display: none;
+  }
+}
+
+
+
+
+
+

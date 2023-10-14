@@ -1,0 +1,662 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+<!--TITLE-->
+<title>Register</title>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<style>
+  body{
+    font-family: "Inter";
+    font-size: 14px;
+  }
+ 
+#innercity1{
+  height: 200px;
+  border: 2px solid black;
+  overflow: scroll;
+  padding: 10px;
+}
+
+.divzz1{
+  display: none;
+  margin-left: 8%;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 82%;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+.ul{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+color: white;
+margin: 20px;
+width: 100%;
+}
+.ul > div{
+padding: 10px;
+text-align: center;
+width: 22%;
+}
+#ul > div:hover{
+background-color: rgb(236, 106, 145);
+}
+#div11{
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+ 
+    width: 77%;
+    margin: 20px;
+    padding: 30px;
+    width: 80%;
+}
+
+#links{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 10px;
+  left: 4%;
+}
+#links > div{
+  margin-right: 5px;
+}
+#translate-button-wrapper{
+  position: relative;
+  left: 1%;
+ 
+}
+@media only screen and (max-width: 1000px) { 
+#upcontainer{
+  height: 80px;width: 300px;
+  background-color: white;position: absolute;padding: 10px;
+  left: 10%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+}
+#upcontainer3{
+  height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  }
+  #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8% !important;  }
+    
+}
+@media only screen and (max-width: 600px) {
+  #upcontainer3{
+    height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+   }
+
+   #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8%;  }  
+}
+
+#upcontainer5{height: 100px;width: 300px;
+  background-color: white;padding: 20px;
+     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  position: relative;top: 20% !important;left: 10%;
+    }
+</style>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<link rel="shortcut icon" href="images/newlogo.jpg">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="Responsive.css">
+<link href="https://fonts.googleapis.com/icon?family=Inter" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  </head>
+  <body>
+    <div id="starter">
+      <h3 id="needhelp">Contact Us:  <a style="color: white;font-weight: lighter;font-size: small;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></h3>
+     <div id="links">
+      <div><button id="botnz"><a href="index.html" style="color: white;">Home</a></button></div>  
+     <div><button id="botnz" ><a href="sign-in.html" style="color: white;">Sign in</a></button></div>  
+     <div><button id="botnzz" ><a href="register.html" style="color: white;">Sign up</a></button></div>  
+     <div id="translate-button-wrapper">
+      <div id="google_translate_element"></div>
+    </div>
+       <script type="text/javascript">
+       function googleTranslateElementInit() {
+         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+       }
+       </script>
+    </div>
+      </div>
+     
+     
+ 
+  <div style="position: sticky;top: 0;background-color: #fafafb;height: 80px; z-index: 5000;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.998),  0 0px 5px 0 rgba(0, 0, 0, 0.19)" >
+    <img src="images/newlogo.jpg" id="ingo">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="span">&#9776;</span>
+    
+    <div style="position: absolute;left: 20%;" id="dropID" >
+    <ul style="margin-top: 0;margin-bottom:20px ;" >
+
+<li onclick="dropdown(1)">
+<p id="color">Banking Services <i class="arrow down"></i></p>
+<p id="colorz">Accounts and Services</p>
+<li>
+
+<li onclick="dropdown(2)">
+  <p id="color">Borrowing  		<i class="arrow down"></i></p>
+  <p id="colorz">Loans and Mortgages</p>
+</li>
+
+<li onclick="dropdown(3)">
+  <p id="color">Investing 	<i class="arrow down"></i> </p>
+  <p id="colorz">Products and Analysis</p>
+</li>
+
+<li onclick="dropdown(4)">
+  <p id="color">Insurance 	<i class="arrow down"></i></p>
+  <p id="colorz">Property and family</p>
+</li>
+
+<li onclick="dropdown(5)">
+  <p id="color" >Life Events 	<i class="arrow down"></i> </p>
+  <p id="colorz">Help and Support</p>
+</li>
+</ul>
+</div>
+
+
+ <!--drop down page 1-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown1">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-42%;" >
+    <h2 id="bluez">Current Accounts</h2>
+    <p><a href="capitalguard_acc.html">CapitalGuard account</a></p>
+    <p><a href="advance-acc.html">Advance account</a></p>
+    <p><a href="student_acc.html">Student account</a></p>
+    <p><a href="bank_acc.html">Bank account</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-42%;">
+    <h2 id="bluez">Savings</h2>
+    <p><a href="savings.html">ISAs</a></p>
+            <p><a href="savings.html">Online bonus saver</a></p>
+            <p><a href="savings.html">flexible saver</a></p><br>
+  </div>
+  <div id="current" style="position: relative;top:-24%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+    <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+    <p><a href="Credit-cards.html">Dual credit card </a></p>
+    <p><a href="classic credit card"></a></p>
+    <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+    <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+    <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;;"class="currentz" >
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="services.html">ways to bank</a></p>
+    <p><a href="services.html">Voice ID</a></p>
+    <p><a href="services.html">Contact and Support</a></p>
+    <p><a href="services.html">Find a branch</a></p>
+    <h2>International Services</h2>
+    <p ><a href="international_services.html">Currency Account</a></p>
+    <p><a href="international_services.html">International payments</a></p>
+    <p><a href="international_services.html">Travel money</a></p>
+  </div>
+  <button onclick="close1()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close1(){
+    document.getElementById("dropdown1").style.display="none";
+  }
+  </script>
+</div>
+
+
+
+ <!--drop down page2-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown2">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-20%;">
+    <h2 id="bluez">Loan</h2>
+    <p><a href="personal-loans.html">personal loan</a></p>
+    <p><a href="car-loans.html">Car loan</a></p>
+    <p><a href="flexible-loan.html">flexiloan</a></p>
+    <p><a href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+    <p><a href="graduate-loan.html">Graduate loan</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-10%;">
+    <h2 id="bluez">Mortgages</h2>
+    <p><a href="First time buyer.html">First time buyer</a></p>
+    <p><a href="95percent-Mortgages.html">95% Mortgages</a></p>
+    <p><a href="Remortgage.html">Remortgage</a></p>
+    <p><a href="buy to let.html">Buy to let</a></p>
+    <p><a href="mortgage rates.html">Mortgage rates</a></p>
+    <p><a href="armed forces.html">Armed forces personel</a></p>
+  </div>
+  <div id="current" style="position: relative;top:-10%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+            <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+            <p><a href="Credit-cards.html">Dual credit card </a></p>
+            <p><a href="classic credit card"></a></p>
+            <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+            <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+            <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-2%;;" class="currentz">
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="borrowingService.html">Help & Support</a></p>
+    <p><a href="borrowingService.html">Money worries</a></p>
+    <h2><a href="borrowingService.html">Tools & Guides</a></h2>
+    <p><a href="borrowingService.html">Overpayment calculator</a></p>
+    <p><a href="borrowingService.html">Base rate information</a></p> 
+    <br><br> 
+  </div>
+  <button onclick="close2()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close2(){
+    document.getElementById("dropdown2").style.display="none";
+  }
+  </script>
+</div>
+
+  <!--drop down pages3-->
+  <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown3">
+    <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:1%;" >
+      <h2 id="bluez"> Investments</h2>
+      <p><a href="investmentfund.html">Investment Funds</a></p>
+              <p><a href="WorldselectionISA.html">World Selection ISA</a></p>
+              <p><a href="sharedealing.html">Sharedealing</a></p>
+              <p><a href="financial advice.html">CapitalGuard financial advice</a></p>
+              <p><a href="onshoreinvestment.html">Onshore investment bond</a></p>
+              <p><a href="child trust fund.html">Child trust fund</a></p>
+    </div>
+    <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-45%;">
+      <h2 id="bluez">Why invest in us</h2>
+      <p><a href="why invest.html">Find out more</a></p>
+    </div>
+    <div id="current" style="position: relative;top:0%">
+
+    </div>
+    <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-50%;;" class="currentz">
+      <h2 style="margin-top: 25px;" >Customer Support</h2>
+      <p><a href="services.html">Getting Started with Investing</a></p>
+    </div>
+    <button onclick="close3()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+    <script>
+      function close3(){
+      document.getElementById("dropdown3").style.display="none";
+    }
+    </script>
+  </div>
+
+     <!--drop down page4-->
+     <div style="height: 350px;width: 90%; display: none;"   class="stack" id="dropdown4">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-10%">
+        <h2 id="bluez">Insurance</h2>
+        <p><a href="home insurance.html">Home Insurance</a></p>
+        <p><a href="travel insurance.html">Travel Insurance</a></p>
+        <p><a href="student insurance.html">Student Insurance</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;">
+        <h2 id="bluez">Life Insurance</h2>
+        <p><a href="life insurance.html">Life Cover</a></p>
+        <p><a href="life insurance.html">Critical Illness Cover</a></p>
+        <p><a href="life insurance.html">Income Cover</a></p>
+        <p><a href="protection telephone advice.html">Telephone Protection Advice</a></p>
+      </div>
+      <div id="current" style="position: relative;top:-9%" >
+        <h2 id="bluez">Insurance Claims</h2>
+        <p><a href="home insurance.html">Home insurance claims</a></p>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-11%" class="currentz">
+        <h2 style="margin-top: 25px;" >CapitalGuard Customers</h2>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <button onclick="close4()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close4(){
+        document.getElementById("dropdown4").style.display="none";
+      }
+      </script>
+    </div>
+
+    <!--drop down page 5-->
+    <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown5">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-40%">
+        <h2 id="bluez">Life Event</h2>
+       <p><a href="berievement.html">Bereavement Support</a></p> 
+        <p><a href="seperation.html">Separation Support</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-48%">
+        <h2 id="bluez">Planning Tools</h2>
+       <p><a href="review.html">Financial Health Check</a> </p>
+     
+      </div>
+      <div id="current" style="position: relative;top:-55%">
+       
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-10%" class="currentz">
+        <h2 style="margin-top: 25px;" >Customer Support</h2>
+        <p><a href="services.html">Ways we can help</a></p>
+      
+        <h2 >Individual Review</h2>
+        <p><a href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+      <button onclick="close5()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close5(){
+        document.getElementById("dropdown5").style.display="none";
+      }
+      </script>
+    </div>
+  </div>
+
+
+<div style="height: 350px;background-image: url(images/morning-coffee.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div style="height: 100px;width: 270px;
+    background-color: white;position: absolute;padding: 10px;
+    left: 10%;top: 55%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;">
+    <h2 id="bluez" style="font-weight:30px;">OPEN AN ACCOUNT</h2>
+    <P style="font-size: larger;font-weight:30px;">A bank with your needs in mind</P>
+    </div>
+    </div>
+<div>
+    <div style="width: 82%;background-color:#0000ff ;" class="ul" >
+      <div >Online Registration</div>
+      <div style="background-color:rgb(236, 106, 145) ;">Terms & conditions</div>
+      <div >User Information</div>
+      <div >Completed</div>
+    </div>
+
+    <div  id="div11"  >
+        <h2 style="color: #0000ff;">TERMS AND CONDITIONS</h2>
+      
+      <div id="innercity1">
+       <p> Before you can start using our online service you must agree to be bound by the conditions below.  You must read the conditions before you 
+        decide whether to accept them.  If you agree to be bound by these conditions, please click the I accept button below.  If you click on the
+        Decline button, you will not be able to continue your registration for our online services. We strongly recommend that you print a copy of 
+        these conditions for your reference.</p>
+        
+       <h3>1. DEFINITIONS.</h3> 
+        <p>In these conditions the following words have the following meanings.</p>
+        
+       <p>- ACCOUNT:  any account which you hold and access via our online service.</p> 
+        
+       <p> - ADDITIONAL SECURITY DETAILS:  the additional information you give us to
+         help us identify you including the additional security question you 
+        provide yourself.</p>
+        
+        <p>- IDENTITY DETAILS:  the access code we may provide you with.</p>
+        
+        <p>- CapitalGuard Financial Union ACCOUNT NUMBER, PASSWORD and ACCOUNT PIN   you choose to identify 
+        yourself when you use our online service.</p>
+        
+        
+        <p>- YOU, YOUR and YOURSELF  refer to the person who has entered into this 
+        agreement with us.
+        </p>
+      
+       <h3>2. USING THE ONLINE SERVICE.</h3> 
+        
+       <p>a. These conditions apply to your use of our online service and in relation to any accounts.  They explain the relationship between you and
+         us in relation to our online service.  You should read these conditions carefully to understand how these services work and your and our rights
+         and duties under them.  If there is a conflict between these conditions and your account conditions, these conditions will apply.  This means 
+        that, when you use our online service both sets of conditions will apply unless they contradict each other in which case, the relevant condition
+         in these conditions apply.</p> 
+        
+       <p> b. If any of your accounts is a joint account, these conditions apply to all of you together and any of you separately.  If more than one of you
+         uses our online service you must each choose your own username, password and additional security details.</p>
+        
+        <p>c. By registering to use our online service, you accept these conditions and agree that we may communicate with you by e-mail or through our website.
+        </p>
+      
+       <p>d. When you use our online service you must follow the instructions we give you from time to time.  You are responsible for ensuring that your 
+        computer, software and other equipment are capable of being used with our online service.</p> 
+        
+        <p>e. Our online sites are secure.  Disconnection from the Internet or leaving these sites will not automatically log you off.  You must always
+         use the log off facility when you are finished and never leave your machine unattended while you are logged in.  As a security measure, if 
+        you have not used the sites for more than a specified period of time we will ask you to log in again. </p>
+        
+       <h3>3. WHAT RULES APPLY TO SECURITY?</h3> 
+        
+        <p>a. As part of the registration for our online service you must provide us with identity details before we will allow you to use the services 
+        for the first time.  You must enter your identity details immediately after signing in, so we can identify you.</p>
+        
+       <p> b. Every time you use our online service you must give us your username, your password and the answer to an additional security question.
+      </p>  
+       
+      <p>c. You can change your username or password online by following the instructions on the screen. </p> 
+        
+       <p> d. For administration or security reasons, we can require you to choose a new username or change your password before you use (or carry on using)
+         our online service.</p>
+        
+       <p> e. You must not write down, store (whether encrypted or otherwise) on your computer or let anyone else know your password, identity details or
+         additional security details, and the fact that they are for use with your accounts.</p>
+        
+       <p> f. If you think that someone else knows your password or any of your additional security details or has used any of them to use our online 
+        service, you must do the following:</p>
+        
+       <p> - For your password, change it online as soon as possible.  If you have difficulty changing your password, you must phone us on +1 234 567 8910
+         immediately.  You can give us your username if you phone to change your password.</p>
+        
+       <p> - For your additional security details, you will need to phone us immediately to change your additional security details.</p>
+        
+       <p>g. We may give the police or any prosecuting authority any information they need if we think it will help them find out if someone else is 
+        using your username, password or any of your additional security details.</p> 
+        
+       <p> h. We may also keep any e-mails sent to or from us.  We do this to check what was written and also to help train our staff.</p>
+        
+       <p>i. If we think that:</p> 
+        
+        <p>- someone else is trying to use our service for your accounts;</p>
+        
+       <p> - the wrong username, password or any of your additional security 
+        details have has been used for your account;</p>
+        
+       <p>- you or someone else is using our online service illegally;</p> 
+        
+       <p>- you are not keeping to these conditions or the conditions of any of 
+        your accounts; or </p> 
+        
+       <p>- your username, password  or any of your additional security details 
+        might be known or used by someone else,</p> 
+        
+       <p>we can stop you (or someone else) using our online service.  We will tell you as soon as possible if we do this.</p> 
+        
+       <p> j. We may require you to provide one or more of the additional security details and/or enter your password again before we accept instructions 
+        about your account.</p>
+        
+       <p> k. You must not tell anyone your password or additional security details.  You can give the Helpdesk your username if you need help to 
+        change your password or need to report that someone else knows your password, username or additional security details.</p>
+        
+       <p>l. For your protection, we occasionally check requests to move or transfer money. Therefore, some transactions may be subject to a delay 
+        of up to 24 hours whilst these checks are carried out.</p> 
+        
+       <p> 4. WHAT IS THE EXTENT OF YOUR LIABILITY?</p>
+        
+       <p> a. If you are a victim of online fraud, we guarantee that you wont lose any money on your accounts and will always be reimbursed in full.
+      </p>  
+       
+      <p>b. Unless you are a victim of fraud you are responsible for all instructions and other information sent using your username, password or
+         additional security details.</p>
+        
+       <p>c. You will not be held responsible for any instructions or information sent after you have told us that someone knows your password or 
+        additional security details and has used any of them to access our online service.</p> 
+        
+       <p> d. CapitalGuard Financial Union do not accept responsibility for any loss you or anybody else may suffer because any instructions or information you sent us are sent in 
+        error, fail to reach us or are distorted unless you have been the victim of fraud.</p>
+        
+        <p>e. CapitalGuard Financial Union do not accept responsibility for any loss you or anybody else may suffer because any instructions or information we send you fail to reach
+         you or are distorted unless you have been the victim of fraud.</p>
+        
+       <p>5. HOW WE CAN CHANGE THESE CONDITIONS</p> 
+        
+       <p> a. CapitalGuard Financial Union change these conditions for any reason by giving you written notice or publishing the change on our website.
+      </p>  
+       <p> b. We may send all written notices to you at the last e-mail address you gave us.  You must let us know immediately if you change your e-mail 
+        address (you can do so online), to make sure that we have your current e-mail address at all times.</p>
+        
+       <h3>6. GENERAL</h3> 
+        
+       <p> CapitalGuard Financial Union service is available to you if you are 18 years of age or over.</p>
+        
+      </div>
+      <br><br>
+      
+      <button  style="height: 40px;border-radius: 10px;border: 0px solid #0000ff;width: 100px;"><a href="register.html" style="color: white;">Decline</a></button>
+      <button  style="height: 40px;border-radius: 10px;border: 0px solid #0000ff;width: 100px;"><a href="register3.php" style="color: white;">Accept</a></button>
+      </div>
+      
+      </div>
+      
+  <div id="mySidenav" class="sidenav">
+    <h3 style="color: white;text-align: center;">Menu</h3>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="smallscreen(1)" id="but1" ><p><b>Banking Services (Accounts and Services)</b></p></button>
+    <div id="smalla1" class="divas2" >
+<div >
+        <p style="color: #1af33bde;">Current Accounts</p>
+        <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="capitalguard_acc.html">CapitalGuard account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="advance-acc.html">Advance account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="student_acc.html">Student account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="bank_acc.html">Bank account</a></p>
+      <hr>
+        <p style="color: #1af33bde;">Savings</p>
+        <p> <a style="font-size: smaller;padding: 0;margin-left: 10px;" href="savings.html">ISAs</a></p>
+                <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">Online bonus saver</a></p>
+                <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">flexible saver</a></p><br>
+     <hr>
+        <p style="color: #1af33bde;">Credit cards</p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">32 month transfer credit card</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Advance Credit Card</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Dual credit card </a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="classic credit card"></a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard credit card</a> </p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Student credit card</a></p>
+     <hr>
+        <p  style="color: #1af33bde;">Services</p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">ways to bank</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Voice ID</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Contact and Support</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Find a branch</a></p>
+        <p style="color: #1af33bde;">International Services</p>
+        <p ><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Currency Account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">International payments</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Travel money</a></p>
+  
+      </div>
+    </div>
+    
+      <button onclick="smallscreen(2)"  id="but1" ><p><b>Borrowing ( Loans and Mortgages) </b></p></button>
+      <div id="smalla2" class="divas2">
+        <div >
+          <p style="color: #1af33bde;">Loan</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="personal-loans.html">personal loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car-loans.html">Car loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="flexible-loan.html">flexiloan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="graduate-loan.html">Graduate loan</a></p>
+       <hr>
+        <p style="color: #1af33bde;">Mortgages</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="First time buyer.html">First time buyer</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="95percent-Mortgages.html">95% Mortgages</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Remortgage.html">Remortgage</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="buy to let.html">Buy to let</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="mortgage rates.html">Mortgage rates</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="armed forces.html">Armed forces personel</a></p>
+     
+       <hr>
+          <p style="color: #1af33bde;">Credit cards</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">32 month transfer credit card</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Advance Credit Card</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Dual credit card </a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="classic credit card"></a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard credit card</a> </p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Student credit card</a></p>
+       <hr>
+       <p style="color: #1af33bde;" >Services</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Help & Support</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Money worries</a></p>
+          <p style="color: #1af33bde;" >Tools & Guides</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Overpayment calculator</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Base rate information</a></p> 
+          
+        </div>
+      </div>
+
+        <button onclick="smallscreen(3)"  id="but1"><p><b> Investing  (Products and Analysis) </b></p></button>
+        <div id="smalla3" class="divas2">
+          <p style="color: #1af33bde;"> Investments</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="investmentfund.html">Investment Funds</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="WorldselectionISA.html">World Selection ISA</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="sharedealing.html">Sharedealing</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="financial advice.html">CapitalGuard financial advice</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="onshoreinvestment.html">Onshore investment bond</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="child trust fund.html">Child trust fund</a></p>
+      
+      <hr>
+          <p style="color: #1af33bde;">Why invest in us</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="why invest.html">Find out more</a></p>
+      
+        <hr>
+         <p style="color: #1af33bde;" >Customer Support</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Getting Started with Investing</a></p>
+    
+        </div>
+
+          <button onclick="smallscreen(4)"  id="but1" ><p><b> Insurance  (Property and family) </b></p>  </button>
+          <div id="smalla4" class="divas2">
+            <p style="color: #1af33bde;">Insurance</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home Insurance</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel Insurance</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="student insurance.html">Student Insurance</a></p>
+  
+          <hr>
+            <p style="color: #1af33bde;">Life Insurance</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Life Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Critical Illness Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Income Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="protection telephone advice.html">Telephone Protection Advice</a></p>
+        
+        <hr>
+        <p style="color: #1af33bde;">Insurance Claims</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+      
+         <hr>
+         <p style="color: #1af33bde;">CapitalGuard Customers</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+         
+          </div>
+            <button onclick="smallscreen(5)"  id="but1" ><p><b> Life Events   ( Help and Support) </b></p> </button>
+            <div id="smalla5" class="divas2">
+              <p style="color: #1af33bde;">Life Event</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="berievement.html">Bereavement Support</a></p> 
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="seperation.html">Separation Support</a></p>
+            <hr>
+            <p style="color: #1af33bde;">Planning Tools</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Financial Health Check</a> </p>
+            
+              <p style="color: #1af33bde;">Customer Support</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="services.html">Ways we can help</a></p>
+             
+               <p style="color: #1af33bde;">Individual Review</p>
+               <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+      <script src="student.js"></script>
+<script src="register.js"></script>
+    <script src="index.js"></script>
+    
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e587ef1-2546-44bf-a34f-91dd266b8881";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+      </body>
+      </html>

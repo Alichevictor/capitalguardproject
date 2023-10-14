@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--TITLE-->
+<title>Student account</title>
+
+<style>
+  body{
+    font-family: "Inter";
+    font-size: 14px;
+  }
+  #links{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 10px;
+  left: 4%;
+}
+#links > div{
+  margin-right: 5px;
+}
+#translate-button-wrapper{
+  position: relative;
+  left: 1%;
+ 
+}
+@media only screen and (max-width: 1000px) { 
+#upcontainer{
+  height: 80px;width: 300px;
+  background-color: white;position: absolute;padding: 10px;
+  left: 10%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+}
+#upcontainer3{
+  height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  }
+  #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8% !important;  }
+    
+}
+@media only screen and (max-width: 600px) {
+  #upcontainer3{
+    height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+   }
+
+   #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8%;  }  
+}
+
+#upcontainer5{height: 100px;width: 300px;
+  background-color: white;padding: 20px;
+     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  position: relative;top: 20% !important;left: 10%;
+    }
+</style>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<link rel="shortcut icon" href="images/newlogo.jpg">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="Responsive.css">
+<link href="https://fonts.googleapis.com/icon?family=Inter" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  </head>
+  <body>
+    <div id="starter">
+  <h3 id="needhelp">Contact Us:  <a style="color: white;font-weight: lighter;font-size: small;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></h3>
+ <div id="links">
+  <div><button id="botnz"><a href="index.html" style="color: white;">Home</a></button></div>  
+ <div><button id="botnz" ><a href="sign-in.html" style="color: white;">Sign in</a></button></div>  
+ <div><button id="botnzz" ><a href="register.html" style="color: white;">Sign up</a></button></div>  
+ <div id="translate-button-wrapper">
+  <div id="google_translate_element"></div>
+</div>
+   <script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+   }
+   </script>
+</div>
+  </div>
+ 
+     
+  <div style="position: sticky;top: 0;background-color: #fafafb;height: 80px; z-index: 5000;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.998),  0 0px 5px 0 rgba(0, 0, 0, 0.19)" >
+    <img src="images/newlogo.jpg" id="ingo">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="span">&#9776;</span>
+    
+    <div style="position: absolute;left: 20%;" id="dropID" >
+    <ul style="margin-top: 0;margin-bottom:20px ;" >
+
+<li onclick="dropdown(1)">
+<p id="color">Banking Services <i class="arrow down"></i></p>
+<p id="colorz">Accounts and Services</p>
+<li>
+
+<li onclick="dropdown(2)">
+  <p id="color">Borrowing  		<i class="arrow down"></i></p>
+  <p id="colorz">Loans and Mortgages</p>
+</li>
+
+<li onclick="dropdown(3)">
+  <p id="color">Investing 	<i class="arrow down"></i> </p>
+  <p id="colorz">Products and Analysis</p>
+</li>
+
+<li onclick="dropdown(4)">
+  <p id="color">Insurance 	<i class="arrow down"></i></p>
+  <p id="colorz">Property and family</p>
+</li>
+
+<li onclick="dropdown(5)">
+  <p id="color" >Life Events 	<i class="arrow down"></i> </p>
+  <p id="colorz">Help and Support</p>
+</li>
+</ul>
+</div>
+
+
+ <!--drop down page 1-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown1">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-42%;" >
+    <h2 id="bluez">Current Accounts</h2>
+    <p><a href="capitalguard_acc.html">CapitalGuard account</a></p>
+    <p><a href="advance-acc.html">Advance account</a></p>
+    <p><a href="student_acc.html">Student account</a></p>
+    <p><a href="bank_acc.html">Bank account</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-42%;">
+    <h2 id="bluez">Savings</h2>
+    <p><a href="savings.html">ISAs</a></p>
+            <p><a href="savings.html">Online bonus saver</a></p>
+            <p><a href="savings.html">flexible saver</a></p><br>
+  </div>
+  <div id="current" style="position: relative;top:-24%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+    <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+    <p><a href="Credit-cards.html">Dual credit card </a></p>
+    <p><a href="classic credit card"></a></p>
+    <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+    <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+    <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;;"class="currentz" >
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="services.html">ways to bank</a></p>
+    <p><a href="services.html">Voice ID</a></p>
+    <p><a href="services.html">Contact and Support</a></p>
+    <p><a href="services.html">Find a branch</a></p>
+    <h2>International Services</h2>
+    <p ><a href="international_services.html">Currency Account</a></p>
+    <p><a href="international_services.html">International payments</a></p>
+    <p><a href="international_services.html">Travel money</a></p>
+  </div>
+  <button onclick="close1()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close1(){
+    document.getElementById("dropdown1").style.display="none";
+  }
+  </script>
+</div>
+
+
+
+ <!--drop down page2-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown2">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-20%;">
+    <h2 id="bluez">Loan</h2>
+    <p><a href="personal-loans.html">personal loan</a></p>
+    <p><a href="car-loans.html">Car loan</a></p>
+    <p><a href="flexible-loan.html">flexiloan</a></p>
+    <p><a href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+    <p><a href="graduate-loan.html">Graduate loan</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-10%;">
+    <h2 id="bluez">Mortgages</h2>
+    <p><a href="First time buyer.html">First time buyer</a></p>
+    <p><a href="95percent-Mortgages.html">95% Mortgages</a></p>
+    <p><a href="Remortgage.html">Remortgage</a></p>
+    <p><a href="buy to let.html">Buy to let</a></p>
+    <p><a href="mortgage rates.html">Mortgage rates</a></p>
+    <p><a href="armed forces.html">Armed forces personel</a></p>
+  </div>
+  <div id="current" style="position: relative;top:-10%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+            <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+            <p><a href="Credit-cards.html">Dual credit card </a></p>
+            <p><a href="classic credit card"></a></p>
+            <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+            <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+            <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-2%;;" class="currentz">
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="borrowingService.html">Help & Support</a></p>
+    <p><a href="borrowingService.html">Money worries</a></p>
+    <h2><a href="borrowingService.html">Tools & Guides</a></h2>
+    <p><a href="borrowingService.html">Overpayment calculator</a></p>
+    <p><a href="borrowingService.html">Base rate information</a></p> 
+    <br><br> 
+  </div>
+  <button onclick="close2()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close2(){
+    document.getElementById("dropdown2").style.display="none";
+  }
+  </script>
+</div>
+
+  <!--drop down pages3-->
+  <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown3">
+    <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:1%;" >
+      <h2 id="bluez"> Investments</h2>
+      <p><a href="investmentfund.html">Investment Funds</a></p>
+              <p><a href="WorldselectionISA.html">World Selection ISA</a></p>
+              <p><a href="sharedealing.html">Sharedealing</a></p>
+              <p><a href="financial advice.html">CapitalGuard financial advice</a></p>
+              <p><a href="onshoreinvestment.html">Onshore investment bond</a></p>
+              <p><a href="child trust fund.html">Child trust fund</a></p>
+    </div>
+    <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-45%;">
+      <h2 id="bluez">Why invest in us</h2>
+      <p><a href="why invest.html">Find out more</a></p>
+    </div>
+    <div id="current" style="position: relative;top:0%">
+
+    </div>
+    <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-50%;;" class="currentz">
+      <h2 style="margin-top: 25px;" >Customer Support</h2>
+      <p><a href="services.html">Getting Started with Investing</a></p>
+    </div>
+    <button onclick="close3()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+    <script>
+      function close3(){
+      document.getElementById("dropdown3").style.display="none";
+    }
+    </script>
+  </div>
+
+     <!--drop down page4-->
+     <div style="height: 350px;width: 90%; display: none;"   class="stack" id="dropdown4">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-10%">
+        <h2 id="bluez">Insurance</h2>
+        <p><a href="home insurance.html">Home Insurance</a></p>
+        <p><a href="travel insurance.html">Travel Insurance</a></p>
+        <p><a href="student insurance.html">Student Insurance</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;">
+        <h2 id="bluez">Life Insurance</h2>
+        <p><a href="life insurance.html">Life Cover</a></p>
+        <p><a href="life insurance.html">Critical Illness Cover</a></p>
+        <p><a href="life insurance.html">Income Cover</a></p>
+        <p><a href="protection telephone advice.html">Telephone Protection Advice</a></p>
+      </div>
+      <div id="current" style="position: relative;top:-9%" >
+        <h2 id="bluez">Insurance Claims</h2>
+        <p><a href="home insurance.html">Home insurance claims</a></p>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-11%" class="currentz">
+        <h2 style="margin-top: 25px;" >CapitalGuard Customers</h2>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <button onclick="close4()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close4(){
+        document.getElementById("dropdown4").style.display="none";
+      }
+      </script>
+    </div>
+
+    <!--drop down page 5-->
+    <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown5">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-40%">
+        <h2 id="bluez">Life Event</h2>
+       <p><a href="berievement.html">Bereavement Support</a></p> 
+        <p><a href="seperation.html">Separation Support</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-48%">
+        <h2 id="bluez">Planning Tools</h2>
+       <p><a href="review.html">Financial Health Check</a> </p>
+     
+      </div>
+      <div id="current" style="position: relative;top:-55%">
+       
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-10%" class="currentz">
+        <h2 style="margin-top: 25px;" >Customer Support</h2>
+        <p><a href="services.html">Ways we can help</a></p>
+      
+        <h2 >Individual Review</h2>
+        <p><a href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+      <button onclick="close5()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close5(){
+        document.getElementById("dropdown5").style.display="none";
+      }
+      </script>
+    </div>
+  </div>
+     
+
+          <div style="height: 400px;background-image: url(images/main-hero-image.jpg);">
+            <div id="upcontainer4">
+            <h2 id="bluez" style="font-weight:30px;">80$ AMAZON.CO.US GIFT CARD & 12 MONTHS OF SWIFT STUDENT</h2>
+            </div>
+            </div>
+            
+           <div id="banner" style="height: 850px;">
+              <div id="banner3">
+                  <p style="font-size: 20px;">Current Accounts</p>
+                  <h3 style="color: #0000ff;font-size: 22px;">CAPITALGUARD FINANCIAL UNION STUDENT ACCOUNT</h3>
+                  <img src="images/visa.png" alt="visa card" style="width: 250px;">
+                <p>For students and apprentices, helping you with your finances:</p>  
+
+                 <p>$80 Amazon.co.US Gift Card and 12 months of swift Student when you open an CapitalGuard Financial Union Student Account before 31 December 20181
+                 </p> 
+                 <p> Guaranteed $1000 interest-free overdraft2 offer on account opening with the option to increase your overdraft as your studies progress3
+                </p>  
+                <p>Representative example (assumed overdraft $1,000): 0% EAR variable.
+                 </p>
+                 <p> Student Credit Card, up to $500 credit available. Subject to status and account conduct4
+                </p> 
+                <p> CapitalGuard Financial Union Regular Saver with a great interest rate of 3% AER/gross up to $3000 fixed for 12 months5
+               </p>  
+               <p> Free stuff, discounts, tickets and competitions to help your money go further
+                 </p>
+                 <p> See your accounts from different banks together in one place with our Connected Money app
+                 </p>
+        
+        <button style="background-color:rgb(101, 167, 15) ;height: 50px;width: 300px;color: #060606de;border:0px solid #eb0d57de ;border-radius: 2px;">CHECK ELIGIBILITY AND HOW TO APPLY</button>
+        </div>
+        
+              <div id="p" style="background-color:#0000ff;width: 40%;padding:20px;margin-right: -37px;height: 812px;color: white;">
+               <p>If you are 18+, US resident and have accepted a place on a qualifying course you can apply online.
+</p> 
+        <p>If you are an apprentice, please book an appointment in branch and bring proof of your confirmed apprenticeship to your appointment
+               </p> 
+               <img src="images/dual-cass-moneyfacts.png" alt="dual" width="300px">
+            </div>
+              
+            </div>
+            <hr style="width: 84%;">
+
+            <h1 style="border-left: 6px solid rgb(101, 167, 15);margin-left: 8%;padding-left: 10px;color: #0000ff;">Support for you while you're studying</h1>
+            
+            <div id="cards">
+                <div>
+                    <img src="images/guarantee-1000-od.jpg" alt="guarantee-1000-od" style="height: 135px;margin: -10px;">
+                    <h3>Guaranteed $1000 interest-free overdraft offer</h3>
+<p>With an CapitalGuard Financial Union Student Account you get a guaranteed $1000  interest free overdraft offer with the opportunity to increase this as your studies progress.
+</p>
+
+<p>Representative example (assumed overdraft $1,000): 0% EAR variable.
+</p>
+<p>Peace of mind by allowing you to make payments when you have run out of money in your account.
+        </p> 
+           </div>
+
+                <div>
+<img src="images/connect-to-the-bigger-pic.jpg" alt="connect-to-the-bigger-pic" style="height: 135px;margin: -10px;">
+<h3>Connect to the bigger picture of your money</h3>
+<p>Wouldn’t it be great if you could see your money in one place, know where it actually goes and just understand it a bit better? Introducing our new intuitive app, Connected Money from Bank, which lets you see your  accounts from different banks together in one place and tracks your spending across different categories and retailers. Download today and connect to the bigger picture of your money.
+        </p>        </div>
+
+                <div>
+                    <img src="images/make-your-own-future.jpg" alt="make-your-own-future" style="height: 135px;margin: -10px;">
+
+                    <h3>Student Credit Card</h3>
+<p>If you're 18 or over, you can apply for a Student Credit Card with a credit limit of up to $500. Handy for emergencies, it's available subject to status and account conduct.
+</p>
+<p>Representative APR: 18.9% APR (variable).</p>
+
+<p>A great way to cover unexpected expenses and build a good credit history.</p>
+                </div>
+
+                <div>
+                    <img src="images/student-credit-c.jpg" alt="student-credit-c" style="height: 135px;margin: -10px;">
+
+                  <h3>Making your own future</h3>  
+<p>Put money aside each month and watch your balance grow with an CapitalGuard Financial Union Regular Saver.
+</p>
+<p>Save up to $3,000 at a great interest rate of 3% AER that's fixed for 12 months
+</p>
+<p>You can start your account by saving just $25 per month by standing order from your CapitalGuard Financial Union current account.
+        </p>    
+        </div>
+            </div>
+<div id="imago">
+            <hr style="width: 84%;">      
+            <h1 style="border-left: 6px solid rgb(101, 167, 15);margin-left: 8%;padding-left: 10px;color: #0000ff;">How CapitalGuard Financial Union Student Account can help you</h1>
+           <ul style="height: 50px;width: 82%;background-color:#0000ff ;margin-left: 8%" id="ul" >
+              <li onclick="opennew(1)"><a>More details</a></li>
+              <li onclick="opennew(2)"><a>Additional services</a></li>
+            </ul>
+
+            <div id="first" class="first">
+              <h2>Amazon Gift Card and swift Student</h2>
+<p>Offer available to students or apprentices in their ﬁrst year of a qualifying course and who fully open an CapitalGuard Financial Union Student Account by 31 December 2018. Account subject to status, you must be US resident and 18+. Terms and conditions apply. Amazon.co.US is not a sponsor of this promotion. Amazon.co.US Gift Cards (“GCs”) may be redeemed on the Amazon.co.US website towards the purchase of eligible products available on www.amazon. co.uk. GCs cannot be reloaded, resold, transferred for value, redeemed for cash or applied to any other account. Amazon.co.US is not responsible if a GC is lost, stolen, destroyed or used without permission. See www.amazon. co.uk/gc-legal for complete terms and conditions. GCs are issued by Amazon EU S.à r.l. All Amazon ®, ™ & © are IP of Amazon.com, Inc. or its afﬁliates.
+</p>
+<h2>Interest-free overdraft</h2>
+<p>We offer you a guaranteed interest-free overdraft of $1,000 when you open your account. You can request an increase of up to $2,000 in year two and $3,000 in year 3, subject to status and account conduct.
+</p>
+<p>Representative example (assumed overdraft $1,000): 0% EAR variable.</p>
+
+<p>Please note, applicants for overdrafts must be 18 or over. If you try to make a withdrawal at any CapitalGuard Financial Union cash machine that would take you over your overdraft limit, you'll get an on-screen alert to let you know how much money you have available to withdraw.
+</p>
+<p>In year 4+, on completing your course you will move onto our Graduate account. You may be eligible for an overdraft facility, of which $1,500 will be interest-free during your first year and $1,000 in your second year after graduation (subject to status and account conduct). Additional overdraft agreed above your interest free entitlement will be charged at 19.9% EAR variable.
+</p>
+<p>Representative examples (Assumed overdraft $1,200):</p>
+
+<p>1st year graduate: Up to $1,500 - 0% EAR (variable). Anything above $1,500 - 19.9% EAR (variable)
+</p>
+<p>2nd year graduate: Up to $1,000 - 0% EAR (variable). Anything above $1,000 - 19.9% EAR (variable)
+</p>
+<p>You can also sign up to receive text alerts when your account balance drops below a certain amount. To set up a text alert, call us on . Lines are open 8am to 10pm every day (except Christmas Day, Boxing Day and New Year's Day). Calls may be recorded.
+</p>
+<h2>Student Credit Card</h2>
+<p>If you're 18 or over, you can apply for a Student Credit Card with a credit limit of up to $500. Handy for emergencies, it's available subject to status and account conduct.
+</p>
+<h2>Regular Saver</h2>
+<p>The fixed preferential rate of 3% AER/gross over 12 months is available to CapitalGuard Financial Union Student Account customers. With Regular Saver, you save money over a 12-month fixed period. Partial withdrawals are not permitted. If you close your account early, you'll receive interest at our Flexible Saver rate.
+</p>
+<p>Save between $25 and $250 per month by standing order for a fixed term of 12 months. If you do not save $250 in any given month you can carry over any unused subscription to following months.
+</p>
+<p>Interest is calculated on the daily cleared balance on your Regular Saver and we will pay this to your Regular Saver on the anniversary of the date your account was opened. You can only hold one Regular Saver Account at any given time.
+</p>
+<p>At the end of 12 months we'll transfer your account balance into your Instant Access Savings, Flexible Saver or CapitalGuard Savings. If you have more than one of these accounts we'll pay your savings into the account which pays the best interest. And if you don't have any of these accounts, we'll convert your Regular Saver to a Flexible Saver. Please note that the money will only be moved into accounts that have exactly the same sole or joint names as the Regular Saver account
+</p>
+<p>AER stands for Annual Equivalent Rate. This shows you what the gross rate would be if interest were paid and compounded each year. Gross is the interest rate you’ll receive before applicable tax is deducted from your account.
+</p>
+<p>If you save $250 every month for 12 months and qualify for the 3% interest rate, you'll earn approximately $48.95 interest (gross)
+</p>
+<h2>Student exclusives</h2>
+<p>Let us give you a bit of help with freebies, tickets, competitions and vouchers to help you make your money go that bit further.
+</p>
+
+
+<h2>Connected Money</h2>
+<p>For CapitalGuard Financial Union US customers only with Online Service & iPhone, iOS 10 or above. T&C’s apply. iPhone is a trademark of Apple Inc. registered in the U.S and other countries.
+       </p>         </div>
+
+                <div id="second" class="second">
+          <h2>capitalguard Financial Union Visa Debit Card</h2> 
+<p>Your CapitalGuard Financial Union Contactless Visa Debit Card gives you instant access to your money whenever you need it. You can use your card to pay for goods and services wherever VISA is accepted. The CapitalGuard Financial Union Visa Debit Card now comes with Contactless technology. Contactless allows you to make low value payments of up to $30 with a simple tap of your card, just look for the Contactless logo at a retailer.
+</p>
+<p>More on the capitalguard Financial Union Debit Card.</p>
+
+<p>You can also use your card to withdraw local currency at cash machines worldwide and pay for goods and services worldwide wherever you see the VISA logo shown on your card2. Unless you agree that the currency conversion is done at the point of sale or withdrawal and agree the rate at that time, for example with the shopkeeper or on the self-service machine screen, the exchange rate that applies to any non-sterling debit card payments (including cash withdrawals) is the VISA Payment Scheme Exchange Rate applying on the day the conversion is made.
+</p>
+<h2>Help with your finances</h2>
+<p>We can give you tips on making the most of your money. And if you're having trouble paying your bills, we can help you work out what to do. More on help with your finances.
+</p>
+<h2>Currency</h2>
+<p>Order commission-free foreign currency on amounts between $100 and $2,500.</p>
+
+<p>Using your Debit Card abroad: The exchange rate that applies to any foreign currency debit card payments (including cash withdrawals) is the Visa scheme exchange rate used by VISA on the day the conversion is made plus a Non-sterling transaction fee, which is currently 2.75% of the transaction amount (and for cash withdrawals  a Cash Fee of 2% of the cash withdrawal (minimum: $1.75, maximum: $5)). We will make the conversion and deduct the payment from your account once we receive details of the payment from VISA, at the latest the next working day. Details of the current Visa scheme exchange rates are available at
+www.visaeurope.com</p>
+
+<p>Note: If you foresee any changes in your circumstances that may increase your outgoings (for example an increase in living costs such as a rent or mortgage payment increase) or any changes to your situation that may reduce or have a negative effect on your monthly disposable income please call in to one of our branches to apply.
+       </p>             </div></div>
+
+   <hr style="width: 83%;margin-top: 20px;">    
+   <h1 style="border-left: 6px solid rgb(101, 167, 15);margin-left: 8%;padding-left: 10px;color: #0000ff;">Apply for CapitalGuard Financial Union Student Account</h1>
+   <h3 onclick="toggleHeight3()" style="width: 170px;margin-left: 8%" id="clicker" >Are you eligible? <i class="arrow down"></i></h3>
+   <div class="write-ups3" id="writeUps3"> 
+   <p>Please ensure you can answer YES to the following questions:</p> 
+    <p>Are you 18 years of age or over?</p>
+    <p>Have you been a resident in the country, Channel Islands or Isle of Man for at least the last 3 years?
+</p>   
+<p> Can you provide proof of address and identification (PDF) if you currently don't have a CapitalGuard Financial Union current account?
+</p>  
+<p> Can you confirm you do not hold a student account elsewhere?</p> 
+   <p>Are you studying, or intending to study:</p> 
+   <p> a full time qualifying course or a apprenticeship (level 2-7) with a UK, Channel Islands or Isle of Man university / college / apprentice learning provider
+    </p> -
+   <p> Postgraduates must have completed an undergraduate degree course in the US in the last three years. To confirm this we must see proof e.g. graduation certificate / diploma or letter from university / college.
+   </p> 
+   <p>You have <b>of your acceptance of an unconditional offer or have met the terms of a conditional offer</b>  for a qualifying course e.g. UCAS letter or letter from your chosen university / college
+   </p>
+   <p> Or you are a first year conditional / unconditional student with a 16-digit UCAS Status Code
+    </p>
+    <p>Or you are an apprentice (level 2+) with an apprentice contract or letter from your apprentice learning provider
+    </p>
+   <h2 style="color:rgb(101, 167, 15);">Please note</h2> 
+    <p>A Student CapitalGuard Financial Union Account can only be applied for when you have accepted an unconditional/conditional offer for a qualifying course at a university/college or if you have accepted an apprenticeship position at level 2 or above. However you can open a CapitalGuard Financial Union Account at anytime and upgrade to the Student CapitalGuard Financial Union Account when you have your place to study accepted.
+   </p> 
+   <p>If you've been in the US less than three years or you're an international student please visit one of our branches or call to open the right account for you. Lines are open 8am to 10pm everyday (except Christmas Day, Boxing Day and New Year's Day). From outside the country .
+   </p> 
+   <p>Once you've submitted your application, we'll send you the paperwork to sign and return to us either by post or in branch.
+    </p>
+   </div>
+
+   <h2 style="margin-left: 8%;padding-left: 10px;color: rgb(101, 167, 15);">Apply online or in branch</h2>
+   <div style="margin-left: 8%;margin-bottom: 3%;">
+   <p>If you are 18+, US resident and have accepted a place on a qualifying course you can apply online.
+</p>
+    <p>If you are an apprentice, please book an appointment in branch and bring proof of your confirmed apprenticeship to your appointment.
+</p> 
+<button style="border: 0px solid rgb(101, 167, 15);border-radius: 5px;height: 40px;width: 200px;background-color: rgb(101, 167, 15);color: rgb(7, 7, 7);"><a href="services.html"> Apply now</a></button>
+<button style="border: 0px solid rgb(101, 167, 15);border-radius: 5px;height: 40px;width: 200px;background-color: rgb(101, 167, 15);color: rgb(8, 8, 8);"><a href="services.html"> Book an appointment in branch</a> </button>
+</div>
+<div style="height: 150px;box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.998),  0 6px 15px 0 rgba(0, 0, 0, 0.19)">
+  <div style="margin-left: 8%;padding-top: 20px;">
+    <h1 style="color:#0000ff">Connect with us</h1>
+<p>Listening to what you have to say about our services matters to us.</p></div>
+
+</div>
+
+<div id="foots">
+  <div id="footer" >
+  <div>
+  <h3>HELP AND SUPPORT </h3>
+  <p>Got a question? We are here to help <br>you</p>
+</div>
+    
+<div>
+  <h3>OUR PERFORMANCE</h3>
+  <p>Get information about our <br> performance</p>
+</div>
+  
+<div>
+ <h3>ABOUT CAPITALGUARD BANK</h3>
+  <p>Careers, media, investor and corporate information</p>
+</div>
+</div>
+
+  <div>
+      <p style="text-align: center;">
+        Federally-insured by the National Credit Administration. we do business in accordance with the Fair Law and Equal oppurtunity Credit Act.
+      </p>
+      <br>
+      <p style="text-align: center;margin-top: 0%;">PO Box: Ermyn Way, Leatherhead KT24 6UX</p>
+    </div>
+    <img id="imago" src="images/newlogo.jpg" alt="logo" style="height: 80px;width: 80px; position: relative;top: -15%;left: 12%;">
+  
+    <p style="text-align: center; color: rgb(216, 211, 211);">© 2023 CapitalGuard Bank- All rights reserved.</p>
+  </div>
+
+
+  <div id="mySidenav" class="sidenav">
+    <h3 style="color: white;text-align: center;">Menu</h3>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="smallscreen(1)" id="but1" ><p><b>Banking Services (Accounts and Services)</b></p></button>
+    <div id="smalla1" class="divas2" >
+<div >
+        <p style="color: #1af33bde;">Current Accounts</p>
+        <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="capitalguard_acc.html">CapitalGuard account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="advance-acc.html">Advance account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="student_acc.html">Student account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="bank_acc.html">Bank account</a></p>
+      <hr>
+        <p style="color: #1af33bde;">Savings</p>
+        <p> <a style="font-size: smaller;padding: 0;margin-left: 10px;" href="savings.html">ISAs</a></p>
+                <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">Online bonus saver</a></p>
+                <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">flexible saver</a></p><br>
+     <hr>
+        <p style="color: #1af33bde;">Credit cards</p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">32 month transfer credit card</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Advance Credit Card</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Dual credit card </a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="classic credit card"></a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard credit card</a> </p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Student credit card</a></p>
+     <hr>
+        <p  style="color: #1af33bde;">Services</p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">ways to bank</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Voice ID</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Contact and Support</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Find a branch</a></p>
+        <p style="color: #1af33bde;">International Services</p>
+        <p ><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Currency Account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">International payments</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Travel money</a></p>
+  
+      </div>
+    </div>
+    
+      <button onclick="smallscreen(2)"  id="but1" ><p><b>Borrowing ( Loans and Mortgages) </b></p></button>
+      <div id="smalla2" class="divas2">
+        <div >
+          <p style="color: #1af33bde;">Loan</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="personal-loans.html">personal loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car-loans.html">Car loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="flexible-loan.html">flexiloan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="graduate-loan.html">Graduate loan</a></p>
+       <hr>
+        <p style="color: #1af33bde;">Mortgages</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="First time buyer.html">First time buyer</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="95percent-Mortgages.html">95% Mortgages</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Remortgage.html">Remortgage</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="buy to let.html">Buy to let</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="mortgage rates.html">Mortgage rates</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="armed forces.html">Armed forces personel</a></p>
+     
+       <hr>
+          <p style="color: #1af33bde;">Credit cards</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">32 month transfer credit card</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Advance Credit Card</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Dual credit card </a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="classic credit card"></a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard credit card</a> </p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Student credit card</a></p>
+       <hr>
+       <p style="color: #1af33bde;" >Services</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Help & Support</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Money worries</a></p>
+          <p style="color: #1af33bde;" >Tools & Guides</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Overpayment calculator</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Base rate information</a></p> 
+          
+        </div>
+      </div>
+
+        <button onclick="smallscreen(3)"  id="but1"><p><b> Investing  (Products and Analysis) </b></p></button>
+        <div id="smalla3" class="divas2">
+          <p style="color: #1af33bde;"> Investments</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="investmentfund.html">Investment Funds</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="WorldselectionISA.html">World Selection ISA</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="sharedealing.html">Sharedealing</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="financial advice.html">CapitalGuard financial advice</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="onshoreinvestment.html">Onshore investment bond</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="child trust fund.html">Child trust fund</a></p>
+      
+      <hr>
+          <p style="color: #1af33bde;">Why invest in us</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="why invest.html">Find out more</a></p>
+      
+        <hr>
+         <p style="color: #1af33bde;" >Customer Support</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Getting Started with Investing</a></p>
+    
+        </div>
+
+          <button onclick="smallscreen(4)"  id="but1" ><p><b> Insurance  (Property and family) </b></p>  </button>
+          <div id="smalla4" class="divas2">
+            <p style="color: #1af33bde;">Insurance</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home Insurance</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel Insurance</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="student insurance.html">Student Insurance</a></p>
+  
+          <hr>
+            <p style="color: #1af33bde;">Life Insurance</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Life Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Critical Illness Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Income Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="protection telephone advice.html">Telephone Protection Advice</a></p>
+        
+        <hr>
+        <p style="color: #1af33bde;">Insurance Claims</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+      
+         <hr>
+         <p style="color: #1af33bde;">CapitalGuard Customers</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+         
+          </div>
+            <button onclick="smallscreen(5)"  id="but1" ><p><b> Life Events   ( Help and Support) </b></p> </button>
+            <div id="smalla5" class="divas2">
+              <p style="color: #1af33bde;">Life Event</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="berievement.html">Bereavement Support</a></p> 
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="seperation.html">Separation Support</a></p>
+            <hr>
+            <p style="color: #1af33bde;">Planning Tools</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Financial Health Check</a> </p>
+            
+              <p style="color: #1af33bde;">Customer Support</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="services.html">Ways we can help</a></p>
+             
+               <p style="color: #1af33bde;">Individual Review</p>
+               <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+
+<script src="index.js"></script>
+<script src="student.js"></script>
+
+ 
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e587ef1-2546-44bf-a34f-91dd266b8881";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+            </body>
+            </html>

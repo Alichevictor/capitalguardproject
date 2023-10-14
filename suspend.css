@@ -1,0 +1,32 @@
+#suspend{
+    height: 100%;
+    width: 100%;
+    background-color: #0000ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+#middle{
+    background-color: whitesmoke;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    height: 400px;
+    text-align: center;
+    color: rgb(85, 83, 83);
+    padding: 20px;
+}
+
+@media only screen and (max-width: 700px) { 
+    #middle{
+      height: auto;
+      margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+    }
+}
+
+  

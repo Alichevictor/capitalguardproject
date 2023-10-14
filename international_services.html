@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <!--TITLE-->
+  <title>International services</title>
+
+  <style>
+    body{
+      font-family: "Inter";
+      font-size: 14px;
+    }
+    #links{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 10px;
+  left: 4%;
+}
+#links > div{
+  margin-right: 5px;
+}
+#translate-button-wrapper{
+  position: relative;
+  left: 1%;
+ 
+}
+@media only screen and (max-width: 1000px) { 
+#upcontainer{
+  height: 80px;width: 300px;
+  background-color: white;position: absolute;padding: 10px;
+  left: 10%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+}
+#upcontainer3{
+  height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  }
+  #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8% !important;  }
+    
+}
+@media only screen and (max-width: 600px) {
+  #upcontainer3{
+    height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+   }
+
+   #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8%;  }  
+}
+
+#upcontainer5{height: 100px;width: 300px;
+  background-color: white;padding: 20px;
+     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  position: relative;top: 20% !important;left: 10%;
+    }
+</style>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<link rel="shortcut icon" href="images/newlogo.jpg">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="Responsive.css">
+<link href="https://fonts.googleapis.com/icon?family=Inter" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  </head>
+  <body>
+    <div id="starter">
+      <h3 id="needhelp">Contact Us:  <a style="color: white;font-weight: lighter;font-size: small;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></h3>
+     <div id="links">
+      <div><button id="botnz"><a href="index.html" style="color: white;">Home</a></button></div>  
+     <div><button id="botnz" ><a href="sign-in.html" style="color: white;">Sign in</a></button></div>  
+     <div><button id="botnzz" ><a href="register.html" style="color: white;">Sign up</a></button></div>  
+     <div id="translate-button-wrapper">
+      <div id="google_translate_element"></div>
+    </div>
+       <script type="text/javascript">
+       function googleTranslateElementInit() {
+         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+       }
+       </script>
+    </div>
+      </div>
+     
+     
+ 
+  <div style="position: sticky;top: 0;background-color: #fafafb;height: 80px; z-index: 5000;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.998),  0 0px 5px 0 rgba(0, 0, 0, 0.19)" >
+    <img src="images/newlogo.jpg" id="ingo">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="span">&#9776;</span>
+    
+    <div style="position: absolute;left: 20%;" id="dropID" >
+    <ul style="margin-top: 0;margin-bottom:20px ;" >
+  
+  <li onclick="dropdown(1)">
+  <p id="color">Banking Services <i class="arrow down"></i></p>
+  <p id="colorz">Accounts and Services</p>
+  <li>
+  
+  <li onclick="dropdown(2)">
+    <p id="color">Borrowing  		<i class="arrow down"></i></p>
+    <p id="colorz">Loans and Mortgages</p>
+  </li>
+  
+  <li onclick="dropdown(3)">
+    <p id="color">Investing 	<i class="arrow down"></i> </p>
+    <p id="colorz">Products and Analysis</p>
+  </li>
+  
+  <li onclick="dropdown(4)">
+    <p id="color">Insurance 	<i class="arrow down"></i></p>
+    <p id="colorz">Property and family</p>
+  </li>
+  
+  <li onclick="dropdown(5)">
+    <p id="color" >Life Events 	<i class="arrow down"></i> </p>
+    <p id="colorz">Help and Support</p>
+  </li>
+  </ul>
+  </div>
+  
+  
+   <!--drop down page 1-->
+   <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown1">
+    <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-42%;" >
+      <h2 id="bluez">Current Accounts</h2>
+      <p><a href="capitalguard_acc.html">CapitalGuard account</a></p>
+      <p><a href="advance-acc.html">Advance account</a></p>
+      <p><a href="student_acc.html">Student account</a></p>
+      <p><a href="bank_acc.html">Bank account</a></p>
+    </div>
+    <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-42%;">
+      <h2 id="bluez">Savings</h2>
+      <p><a href="savings.html">ISAs</a></p>
+              <p><a href="savings.html">Online bonus saver</a></p>
+              <p><a href="savings.html">flexible saver</a></p><br>
+    </div>
+    <div id="current" style="position: relative;top:-24%;">
+      <h2 id="bluez">Credit cards</h2>
+      <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+      <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+      <p><a href="Credit-cards.html">Dual credit card </a></p>
+      <p><a href="classic credit card"></a></p>
+      <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+      <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+      <p><a href="Credit-cards.html">Student credit card</a></p>
+    </div>
+    <div id="current" style="background-color:  #0000ff;color: white; height: 330px;;"class="currentz" >
+      <h2 style="margin-top: 25px;" >Services</h2>
+      <p><a href="services.html">ways to bank</a></p>
+      <p><a href="services.html">Voice ID</a></p>
+      <p><a href="services.html">Contact and Support</a></p>
+      <p><a href="services.html">Find a branch</a></p>
+      <h2>International Services</h2>
+      <p ><a href="international_services.html">Currency Account</a></p>
+      <p><a href="international_services.html">International payments</a></p>
+      <p><a href="international_services.html">Travel money</a></p>
+    </div>
+    <button onclick="close1()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+    <script>
+      function close1(){
+      document.getElementById("dropdown1").style.display="none";
+    }
+    </script>
+  </div>
+  
+  
+  
+   <!--drop down page2-->
+   <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown2">
+    <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-20%;">
+      <h2 id="bluez">Loan</h2>
+      <p><a href="personal-loans.html">personal loan</a></p>
+      <p><a href="car-loans.html">Car loan</a></p>
+      <p><a href="flexible-loan.html">flexiloan</a></p>
+      <p><a href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+      <p><a href="graduate-loan.html">Graduate loan</a></p>
+    </div>
+    <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-10%;">
+      <h2 id="bluez">Mortgages</h2>
+      <p><a href="First time buyer.html">First time buyer</a></p>
+      <p><a href="95percent-Mortgages.html">95% Mortgages</a></p>
+      <p><a href="Remortgage.html">Remortgage</a></p>
+      <p><a href="buy to let.html">Buy to let</a></p>
+      <p><a href="mortgage rates.html">Mortgage rates</a></p>
+      <p><a href="armed forces.html">Armed forces personel</a></p>
+    </div>
+    <div id="current" style="position: relative;top:-10%;">
+      <h2 id="bluez">Credit cards</h2>
+      <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+              <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+              <p><a href="Credit-cards.html">Dual credit card </a></p>
+              <p><a href="classic credit card"></a></p>
+              <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+              <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+              <p><a href="Credit-cards.html">Student credit card</a></p>
+    </div>
+    <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-2%;;" class="currentz">
+      <h2 style="margin-top: 25px;" >Services</h2>
+      <p><a href="borrowingService.html">Help & Support</a></p>
+      <p><a href="borrowingService.html">Money worries</a></p>
+      <h2><a href="borrowingService.html">Tools & Guides</a></h2>
+      <p><a href="borrowingService.html">Overpayment calculator</a></p>
+      <p><a href="borrowingService.html">Base rate information</a></p> 
+      <br><br> 
+    </div>
+    <button onclick="close2()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+    <script>
+      function close2(){
+      document.getElementById("dropdown2").style.display="none";
+    }
+    </script>
+  </div>
+  
+    <!--drop down pages3-->
+    <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown3">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:1%;" >
+        <h2 id="bluez"> Investments</h2>
+        <p><a href="investmentfund.html">Investment Funds</a></p>
+                <p><a href="WorldselectionISA.html">World Selection ISA</a></p>
+                <p><a href="sharedealing.html">Sharedealing</a></p>
+                <p><a href="financial advice.html">CapitalGuard financial advice</a></p>
+                <p><a href="onshoreinvestment.html">Onshore investment bond</a></p>
+                <p><a href="child trust fund.html">Child trust fund</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-45%;">
+        <h2 id="bluez">Why invest in us</h2>
+        <p><a href="why invest.html">Find out more</a></p>
+      </div>
+      <div id="current" style="position: relative;top:0%">
+  
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-50%;;" class="currentz">
+        <h2 style="margin-top: 25px;" >Customer Support</h2>
+        <p><a href="services.html">Getting Started with Investing</a></p>
+      </div>
+      <button onclick="close3()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close3(){
+        document.getElementById("dropdown3").style.display="none";
+      }
+      </script>
+    </div>
+  
+       <!--drop down page4-->
+       <div style="height: 350px;width: 90%; display: none;"   class="stack" id="dropdown4">
+        <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-10%">
+          <h2 id="bluez">Insurance</h2>
+          <p><a href="home insurance.html">Home Insurance</a></p>
+          <p><a href="travel insurance.html">Travel Insurance</a></p>
+          <p><a href="student insurance.html">Student Insurance</a></p>
+        </div>
+        <div  id="current" style="border-right: 1px solid #0000ff;">
+          <h2 id="bluez">Life Insurance</h2>
+          <p><a href="life insurance.html">Life Cover</a></p>
+          <p><a href="life insurance.html">Critical Illness Cover</a></p>
+          <p><a href="life insurance.html">Income Cover</a></p>
+          <p><a href="protection telephone advice.html">Telephone Protection Advice</a></p>
+        </div>
+        <div id="current" style="position: relative;top:-9%" >
+          <h2 id="bluez">Insurance Claims</h2>
+          <p><a href="home insurance.html">Home insurance claims</a></p>
+          <p><a href="travel insurance.html">Travel insurance claims</a></p>
+          <p><a href="car insurance.html">Car insurance claims</a></p>
+        </div>
+        <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-11%" class="currentz">
+          <h2 style="margin-top: 25px;" >CapitalGuard Customers</h2>
+          <p><a href="travel insurance.html">Travel insurance claims</a></p>
+          <p><a href="car insurance.html">Car insurance claims</a></p>
+        </div>
+        <button onclick="close4()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+        <script>
+          function close4(){
+          document.getElementById("dropdown4").style.display="none";
+        }
+        </script>
+      </div>
+  
+      <!--drop down page 5-->
+      <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown5">
+        <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-40%">
+          <h2 id="bluez">Life Event</h2>
+         <p><a href="berievement.html">Bereavement Support</a></p> 
+          <p><a href="seperation.html">Separation Support</a></p>
+        </div>
+        <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-48%">
+          <h2 id="bluez">Planning Tools</h2>
+         <p><a href="review.html">Financial Health Check</a> </p>
+       
+        </div>
+        <div id="current" style="position: relative;top:-55%">
+         
+        </div>
+        <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-10%" class="currentz">
+          <h2 style="margin-top: 25px;" >Customer Support</h2>
+          <p><a href="services.html">Ways we can help</a></p>
+        
+          <h2 >Individual Review</h2>
+          <p><a href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+        </div>
+        <button onclick="close5()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+        <script>
+          function close5(){
+          document.getElementById("dropdown5").style.display="none";
+        }
+        </script>
+      </div>
+    </div>
+  
+
+  <div style="height: 400px;background-image: url(images/woman-travelling-kid-airport.jpg);">
+    <div id="upcontainer4">
+    <h2 id="bluez" style="font-weight:30px;">INTERNATIONAL SERVICES</h2>
+    <P style="font-size: larger;font-weight:30px;">Discover our array of international services</P>
+    </div>
+    </div>
+
+
+    <ul class="topic" id="ul">
+      <li onclick="openz(1)" style="height: 40px;width: 26%;border-radius: 5px;text-align: center;padding-top: 20px;" class="howa"><a>Bank currency account</a></li>
+      <li onclick="openz(2)" style="height: 40px;width: 26%;border-radius: 5px;text-align: center;padding-top: 20px;" class="howa"><a>International Payments</a></li>
+      <li onclick="openz(3)" style="height: 40px;width: 26%;border-radius: 5px;text-align: center;padding-top: 20px;" class="howa"><a>Travel Money</a></li>
+  </ul>
+    
+<table class="topper">
+  <tr>
+    <td onclick="openz(1)">Bank currency account</td>
+    <td onclick="openz(2)" >International Payments</td>
+    <td onclick="openz(3)">Travel Money</td>
+  </tr>
+</table>
+    
+
+
+<div id="divi1" class="divi1">
+  <div id="banner" style="height: 1200px;width: 90%;margin-left: 2%;">
+    <div id="banner3">
+        <h3 style="color: #0000ff;">MANAGING YOUR FOREIGN CURRENCY</h3>
+        <img src="images/visa.png" alt="visa card" style="width: 250px;">
+       <p>The Bank Currency Account is an easy-to-manage currency holding account, with no monthly account fee. With accounts available in 14 major currencies, it allows you to make payments into and out of your accounts.</p>
+<P>Designed to support your international lifestyle, with easy access to your account via Online Service, you can manage your finances wherever you are in the world.</p> 
+      
+  <h2>Account features:</h2>
+  <h3>No account fee</h3>
+  <p>There's no monthly fee for the account and no payment fee when sending money to another Bank account anywhere in the world. You can also make payments to non Bank accounts overseas fees may apply.
+</p>  
+  <h3>Live exchange rates</h3>
+  <p>With live rates updated by the second during market hours, we'll provide you with our most up-to-date foreign exchange rate available when making payments.
+</p>  
+  <h3>Online access</h3>
+  <p>You can easily make transfers between your Bank accounts or send money to an account abroad via Online Service.
+</p>  
+  <h3>Managing your payments</h3>
+  <p>You can create immediate international payments or set these up online up to a year in advance or on a recurring basis.
+</p>  
+  <h3>Bank in the currency of your choice
+</h3> 
+ <p>Choose to hold your account in one of 14 major currencies including Euro, US Dollar and Chinese Renminbi.
+</p>  
+  <h3>Credit is subject to status, affordability and applicable terms and conditions. </h3>
+
+</div>
+
+    <div id="p" style="background-color:#0000ff;width: 31%;padding:20px;margin-right: -37px;height: 1060px;color: white;">
+     <h1>Bank Currency Account</h1>
+      <h3>Find out how to apply for a Bank Currency Account today</h3>
+      
+  </div>
+    
+  </div>
+<hr style="width: 87%;">
+  <h1 style="border-left: 6px solid rgb(101, 167, 15);margin-left: 6%;padding-left: 10px;color: #060a80de;">How to apply for a Bank Currency Account</h1>
+   <div style="margin-left: 6%;">
+<p>Eligibility:
+  <p>To apply for an Bank Currency Account you need to hold an active Bank current account (excluding Basic Bank Account),</p> 
+  <p>Be a resident of the country</p>
+  <p>Be 18 years of age or over</p>
+  <p>If you're not yet an Bank customer, find out more about our current accounts.</p>
+  <button style="border: 0px solid rgb(244, 37, 72);border-radius: 5px;height: 40px;width: 200px;background-color: rgb(101, 167, 15);color: white;"><a href="services.html">Apply now</a></button>
+
+  
+   <hr style="width: 89%;">
+
+
+   <button onclick="openup3(1)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How can i pay into the account?</button>
+   <div id="divs1" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+   <p>You can credit your Bank Currency Account by making a transfer from your Bank sterling account online, in branch or via the telephone. You can also pay into your account from another bank account - account details can be found on your welcome letter or on your statement. Please note: Cash deposits are not available with this account.
+</p> 
+<p>When accessing your account via Online Service note that between 10pm Saturday until 8am Sunday (US time) we will undertake system maintenance and can only provide limited access to your Bank Currency Account(s).
+</p>
+<p>During this maintenance period, you will be able to view your account though the balances and transactions may not be up to date and it is not possible to make transfers to or from your Bank Currency Account(s) or to make payments from it.
+</p>   
+</div>
+   <button onclick="openup3(2)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How can i make a withdrawal from my account</button>
+   <div id="divs2" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+   <p> You can withdraw money from your Bank Currency Account by making a transfer to your Bank sterling account either online, in branch or via the telephone. You can also arrange for a payment to be made out of the account using our International Payments service or cash withdrawal by visiting any of our Bank US Branches. Please note: Cash deposits are not available with this account. We also do not offer overdraft facilities on this account, therefore please ensure you have sufficient funds in your account prior to making a payment or withdrawal.
+</p>
+<p>When accessing your account via Online Service note that between 10pm Saturday until 8am Sunday (US time) we will undertake system maintenance and can only provide limited access to your Bank Currency Account(s).
+</p>
+<p>During this maintenance period, you will be able to view your account though the balances and transactions may not be up to date and it is not possible to make transfers to or from your Bank Currency Account(s) or to make payments from it.
+</p> 
+  </div>
+   <button onclick="openup3(3)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">Which exchange rate is used</button>
+   <div id="divs3" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+    <p>The exchange rate applied to your instruction will be the Bank Exchange Rate applicable at the time your payment is made. This is a live rate which is updated by the second during market hours. We will notify you each time you make a payment from your account and where a currency exchange has been involved, we will confirm the Bank Exchange Rate that has been applied.
+</p>  
+ </div>
+   <button onclick="openup3(4)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">Is interest applied to the bank current account?</button>
+   <div id="divs4" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+    <p>There is no interest payable on the Bank Currency Account.</p>
+   </div>
+   <button onclick="openup3(5)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How much can i send?</button>
+   <div id="divs5" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+    <h3>International payments:</h3>
+<p>Online: up to $50,000 (or currency equivalent)</p>
+<p>Branch: unlimited</p>
+<p>Telephone: unlimited for Premier, and up to $10,000 (or currency equivalent) for Non-Premier</p>
+ 
+
+<h3>Transfers:</h3>
+
+<p>Transfers between your own Bank accounts are unlimited.</p>
+   </div>
+   <button onclick="openup3(6)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How do i cancel a payment</button>
+   <div id="divs6" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+    <p>It is not possible to cancel an immediate payment or transfer you have instructed us to make. If you need to cancel a payment that is due to be made on a future or recurring date, then you have until 23:59 (US time) the day before the payment is due, to cancel it. This can only be done via Online Service.
+</p>  
+  </div>
+   <button onclick="openup3(7)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px">How long will it take</button>
+   <div id="divs7" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+   <p>Payments to accounts in the EEA in euro and sterling will normally be credited the next working day*. All other payments will normally take up to four working days* (but may take longer depending on the country the money is being sent to).
+ </p>  
+</div>
+  </div>
+</div>
+
+<!--second div-->
+<div id="divi2" class="divi" style="height: 2400px; width: 100%;">
+  <div id="banner" style="height: 900px;width: 90%;margin-left: 2%;">
+    <div id="banner3">
+        <h3 style="color: #0000ff;font-size: 19px;">WHY CHOOSE CAPITALGUARD FINANCIAL UNION TO SEND MONEY ABROAD?</h3>
+       <p>We've made it quick and easy for you to make international payments and send money abroad:</p>
+  <h2>Making international payments:</h2>
+  <h3>Available 24/7 via Online Service</h3>
+  <p>Send up to $50,000 or currency equivalent in a matter of minutes. We've also made it easy for you to set up future dated and recurring payments.</p> 
+  <h3>Simple fees</h3>
+ <p>Send money online for just $4. There's no payment fee if you transfer to another CapitalGuard Financial Union account.</p> 
+  <h3>Exchange rate certainty</h3>
+  <p>With live rates updated by the second during market hours we'll provide you with our most up to date foreign exchange rate available, providing you with the certainty and visibility of how much you're sending.</p> 
+  <h3>Safe and secure</h3>
+ <p>Using your own bank means you'll have peace of mind knowing that your transaction is secure. Last year we helped our customers make over 1.3 million payments to over 150 different countries.</p> 
+
+</div>
+<div id="p" style="background-color:#0000ff;width: 31%;padding:20px;margin-right: -37px;height: 660px;color: white;">
+ <h1>International Payments</h1>
+  <h3>Find out how to make a payment online  </h3> 
+</div>
+</div>
+<hr style="width: 87%;">
+<div style="margin-left: 6%;padding-right: 30px;">
+  <h1 style="border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #060a80de;">How to make an international payment</h1>
+  <h2>Make a payment online</h2>
+<p>Log on to Online Service and:</p>
+<p>1. Select the account from where you want to make the payment and select 'Move Money'</p>
+<p>2. Enter payment details</p>
+<p>3. Follow the on-screen instructions</p>
+<p>4. Review and confirm your payment</p>
+<button style="background-color:rgb(101, 167, 15) ;height: 50px;width: 300px;color: #0a0a0bde;border:0px solid #eb0d57de ;border-radius: 2px;"><a href="sign-in.html">LOG ON TO MAKE PAYMENTS</a></button>
+<p>you can also make payments by phone or in branch</p>
+<hr>
+<h1 style="border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #060a80de;">Receiving money from abroad</h1>
+<h2 style="color: rgb(53, 86, 10);">Things you need to know before receiving a payment</h2>
+<p>The overseas CapitalGuard Financial Union sending the payment to you will need to know the following information about the account you wish to be credited – Providing this information will help to ensure that the payment happens as quickly as possible.
+</p>
+<p>1. Your personal details</p>
+<p>2. SWIFT Code</p>
+<p>3. IBAN (International Bank Account Number) or account number</p>
+<p>4. BIC (Business Identifier Code)</p>
+<p>It’s possible for you to receive payments into your account from abroad in either foreign currency or Sterling.
+</p>
+<p>If a payment is received in a different currency to what your account is held in, we'll convert it using the most up to date CapitalGuard Financial Union Exchange Rate available before crediting it to your account.
+</p>
+<hr>
+<button onclick="openup4(1)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">What details do i need to make an international payment?</button>
+   <div id="divo1" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+   <p> We'll make your international payment using the details you provide to us, so it's really important you check they are correct to avoid any unnecessary delays and / or charges.
+</p>
+   <p>Before you make an international payment it's important that you have the following details to hand about your beneficiary and payment:
+</p>     
+   <p> <b>Your account details:</b> for the Bank Account you wish to be debited
+</p>   
+<p>Beneficiary's full name and address</p> 
+   <p> <b>Beneficiary's bank code: </b>You should obtain this code, normally the Business Identifier Code (BIC), from your beneficiary. For some countries you may need the national bank code rather than the BIC.
+</p>   
+ <p><b>IBAN (International Bank Account number) or account number: </b>The IBAN is a series of alphanumeric characters that helps to identify accounts held anywhere in the world. Some beneficiaries may hold just an account number depending on their bank.
+</p>   
+  <p><b>Country of their bank:</b> Your beneficiaries' account holding bank may not always be the same as their home country
+</p>    
+ <p>Amount of the payment </p>
+   <p><b>Any reference: </b> Any reference you would like to be included to be sent to the beneficiary, however we cannot guarantee this information will be passed to your beneficiary by their bank
+</p>   
+ <p> <b>Reason for making the payment:</b> It is important to provide us with this information if we ask for it
+</p>
+</div>
+
+   <button onclick="openup4(2)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How much can i send</button>
+   <div id="divo2" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+   <p>Online: up to $50,000 (or currency equivalent)</p> 
+   <p>Branch: unlimited</p> 
+   <p> Telephone: unlimited for Premier, and up to $10,000 (or currency equivalent) for Non-Premier
+</p>  
+</div>
+
+   <button onclick="openup4(3)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How long will it take</button>
+   <div id="divo3" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+   <p>Payments to accounts in the EEA in euro and sterling will normally be credited the next working day*. All other payments will normally take up to four working days* (but may take longer depending on the country the money is being sent to).
+</p> 
+    <p>* subject to currency cut-off time and further checks, as from time to time we may need to conduct additional security checks to validate the payment.
+</p>
+ </div>
+
+   <button onclick="openup4(4)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How can is set up a future dated or recurring payment?</button>
+   <div id="divo4" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+    <p>Currently this option is only available online when logged into Online Service.
+    </p>
+   </div>
+
+   <button onclick="openup4(5)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">Which exchange rate is used?</button>
+   <div id="divo5" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+<p>The exchange rate applied to your instruction will be the CapitalGuard Financial Union Exchange Rate applicable at the time your payment is made. This is a live rate which is updated by the second during market hours. We will notify you each time you make a payment from your account and where a currency exchange has been involved, we will confirm the CapitalGuard Financial Union Exchange Rate that has been applied.</p>
+   </div>
+
+   <button onclick="openup4(6)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How can i check the CapitalGuard financial union exchange rate applied to future/recurring payments?</button>
+   <div id="divo6" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+    <p>For future dated payments, the exchange rate will be applied on the day that the payment is made.
+</p>
+    <p>You can check the actual exchange rate used for the payment by viewing 'Historic payments' within 'Manage payments'.
+</p>    
+    <p>We will also write to you to advise of the exchange rate applied to the payment where applicable.
+</p>  
+</div>
+
+   <button onclick="openup4(7)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px">How do i cancel a payment?</button>
+   <div id="divo7" class="divas2" style="padding-right: 50px;padding-left: 20px;">
+   <p>If you've asked us to make a payment immediately you will be unable to cancel it.</p> 
+   <p>You can cancel a future dated or recurring international payment set up online by selecting 'Manage payments - future payments' in Send Money Overseas via Online Service. We will need to have received your request to cancel by 23.59 (US Time) on the day before the payment is due to be made.
+</p> 
+</div>
+
+
+
+
+</div>
+</div>
+
+<!--third div-->
+<div id="divi3" class="divi" style="height: 1400px; width: 100%;">
+  <div id="banner" style="height: 800px;width: 90%;margin-left: 2%;">
+    <div id="banner3">
+        <h3 style="color: #0000ff;font-size: 22px;">TRAVEL MONEY MADE EASY</h3>
+        <p>At CapitalGuard Financial Union we’ve made ordering your Travel Money quick and easy – order online and choose home delivery or collect in branch.</p>
+  <h2>Travel money features:</h2>
+  <h3>Travel money features:</h3>
+  <p>You can check our competitive rates online.</p>
+  <h3>Quick & easy to order online</h3>
+ <p>Just follow the onscreen instructions and order your Travel Money in minutes.</p>  
+  <h3>All major currencies available</h3>
+  <p>We offer a wide range of foreign currencies for your Travel Money needs.</p>
+  <h3>Fee free next day delivery</h3>
+  <p>Order online by 2pm and have your money delivered to your home or chosen branch the next working day. Until 10 December 2018 all orders will be delivered fee free. Terms and Conditions apply. Minimum order $100.</p> 
+  <h3>Buy back service
+</h3> 
+ <p>Take your unused notes back to any CapitalGuard Financial Union branch and we'll buy them back from you. Please ask in branch for our buy back rates as different exchange rates apply for this service.</p> 
+ 
+
+<button style="background-color:rgb(101, 167, 15)  ;height: 40px;width: 300px;color: #0b0b0bde;border:0px solid #eb0d57de ;border-radius: 2px;"><a href="sign-in.html">CHECK RATES AND ORDER ONLINE</a></button>
+</div>
+
+    <div id="p" style="background-color:#0000ff;width: 31%;padding:20px;margin-right: -37px;height: 660px;color: white;">
+     <h1>Travel Money</h1>
+      <h3>Find out how to order Travel Money online today</h3>
+      <h3>For details on how we will use your personal information, please see our Privacy Notice (PDF). CapitalGuard Financial Union Travel Money is provided by Travelex Currency Services Ltd. Please read their Privacy Notice shown within the order form</h3>
+      
+  </div>
+  </div>
+  <hr style="width: 87%;">
+  <div style="margin-left: 6%">
+  <h1 style="border-left: 6px solid rgb(101, 167, 15) ;padding-left: 10px;color: #060a80de;">How to order Travel Money</h1>
+  <p>You can order your Travel Money online 24/7*:</p>
+ <p>1. Order before 2pm for delivery the next working day</p> 
+  <p>2. Select delivery to your home or chosen branch</p>
+  <p>3. Choose from all major currencies</p>
+  <button style="background-color:rgb(101, 167, 15)  ;height: 50px;width: 300px;color: #0b0b0bde;border:0px solid #eb0d57de ;border-radius: 2px;"><a href="sign-in.html">CHECK RATES AND ORDER ONLINE</a></button>
+  <hr >
+  <div>
+  <h1 style="border-left: 6px solid rgb(101, 167, 15) ;padding-left: 10px;color: #060a80de;">Your travel checklist</h1>
+  <p>Make sure to follow these tips before, during and after you travel:</p>
+
+ <p>1. Contact us to let us know you're travelling and taking your debit / credit card with you, and note down the lost / stolen emergency number just in case
+</p> 
+  <p>2. Order your Travel Money online, by phone or in branch</p>
+  <p>3. Get travel insurance1 and take the policy details along with you</p>
+  <p>4. When you return, take your unused notes back to your branch and we'll buy them back from you
+</p>
+
+<p>Note: Some of our CapitalGuard Financial Union Current Accounts have Travel Insurance, be sure to check before you book any Travel Insurance.
+<br>Please ask in branch for our buy back rates as different exchange rates apply for this service.</p>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+  
+  <div style="height: 150px;box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.998),  0 6px 15px 0 rgba(0, 0, 0, 0.19);margin-top: 3%;">
+    <div style="margin-left: 8%;padding-top: 20px;">
+      <h1 style="color:#0000ff">Connect with us</h1>
+  <p>Listening to what you have to say about our services matters to us.</p></div>
+  
+  </div>
+  
+  <div id="foots">
+    <div id="footer" >
+    <div>
+    <h3>HELP AND SUPPORT </h3>
+    <p>Got a question? We are here to help <br>you</p>
+  </div>
+      
+  <div>
+    <h3>OUR PERFORMANCE</h3>
+    <p>Get information about our <br> performance</p>
+  </div>
+    
+  <div>
+    <h3>ABOUT CAPITALGUARD</h3>
+    <p>Careers, media, investor and corporate information</p>
+  </div>
+  </div>
+    
+    <div>
+        <p style="text-align: center;">
+          Federally-insured by the National Credit Administration. we do business in accordance with the Fair Law and Equal oppurtunity Credit Act.
+        </p>
+        <br>
+        <p style="text-align: center;margin-top: 0%;">PO Box: Ermyn Way, Leatherhead KT24 6UX</p>
+      </div>
+      <img id="imago" src="images/newlogo.jpg" alt="logo" style="height: 80px;width: 80px; position: relative;top: -15%;left: 12%;">
+    
+      <p style="text-align: center; color: rgb(216, 211, 211);">© 2023 CapitalGuard Bank- All rights reserved.</p>
+  
+  </div>
+
+
+
+
+    <div id="mySidenav" class="sidenav">
+      <h3 style="color: white;text-align: center;">Menu</h3>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <button onclick="smallscreen(1)" id="but1" ><p><b>Banking Services (Accounts and Services)</b></p></button>
+      <div id="smalla1" class="divas2" >
+  <div >
+          <p style="color: #1af33bde;">Current Accounts</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="capitalguard_acc.html">CapitalGuard account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="advance-acc.html">Advance account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="student_acc.html">Student account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="bank_acc.html">Bank account</a></p>
+        <hr>
+          <p style="color: #1af33bde;">Savings</p>
+          <p> <a style="font-size: smaller;padding: 0;margin-left: 10px;" href="savings.html">ISAs</a></p>
+                  <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">Online bonus saver</a></p>
+                  <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">flexible saver</a></p><br>
+       <hr>
+          <p style="color: #1af33bde;">Credit cards</p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">32 month transfer credit card</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Advance Credit Card</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Dual credit card </a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="classic credit card"></a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard credit card</a> </p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Student credit card</a></p>
+       <hr>
+          <p  style="color: #1af33bde;">Services</p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">ways to bank</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Voice ID</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Contact and Support</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Find a branch</a></p>
+          <p style="color: #1af33bde;">International Services</p>
+          <p ><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Currency Account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">International payments</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Travel money</a></p>
+    
+        </div>
+      </div>
+      
+        <button onclick="smallscreen(2)"  id="but1" ><p><b>Borrowing ( Loans and Mortgages) </b></p></button>
+        <div id="smalla2" class="divas2">
+          <div >
+            <p style="color: #1af33bde;">Loan</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="personal-loans.html">personal loan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car-loans.html">Car loan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="flexible-loan.html">flexiloan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="graduate-loan.html">Graduate loan</a></p>
+         <hr>
+          <p style="color: #1af33bde;">Mortgages</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="First time buyer.html">First time buyer</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="95percent-Mortgages.html">95% Mortgages</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Remortgage.html">Remortgage</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="buy to let.html">Buy to let</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="mortgage rates.html">Mortgage rates</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="armed forces.html">Armed forces personel</a></p>
+       
+         <hr>
+            <p style="color: #1af33bde;">Credit cards</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">32 month transfer credit card</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Advance Credit Card</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Dual credit card </a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="classic credit card"></a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard credit card</a> </p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Student credit card</a></p>
+         <hr>
+         <p style="color: #1af33bde;" >Services</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Help & Support</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Money worries</a></p>
+            <p style="color: #1af33bde;" >Tools & Guides</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Overpayment calculator</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Base rate information</a></p> 
+            
+          </div>
+        </div>
+  
+          <button onclick="smallscreen(3)"  id="but1"><p><b> Investing  (Products and Analysis) </b></p></button>
+          <div id="smalla3" class="divas2">
+            <p style="color: #1af33bde;"> Investments</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="investmentfund.html">Investment Funds</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="WorldselectionISA.html">World Selection ISA</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="sharedealing.html">Sharedealing</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="financial advice.html">CapitalGuard financial advice</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="onshoreinvestment.html">Onshore investment bond</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="child trust fund.html">Child trust fund</a></p>
+        
+        <hr>
+            <p style="color: #1af33bde;">Why invest in us</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="why invest.html">Find out more</a></p>
+        
+          <hr>
+           <p style="color: #1af33bde;" >Customer Support</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Getting Started with Investing</a></p>
+      
+          </div>
+  
+            <button onclick="smallscreen(4)"  id="but1" ><p><b> Insurance  (Property and family) </b></p>  </button>
+            <div id="smalla4" class="divas2">
+              <p style="color: #1af33bde;">Insurance</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home Insurance</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel Insurance</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="student insurance.html">Student Insurance</a></p>
+    
+            <hr>
+              <p style="color: #1af33bde;">Life Insurance</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Life Cover</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Critical Illness Cover</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Income Cover</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="protection telephone advice.html">Telephone Protection Advice</a></p>
+          
+          <hr>
+          <p style="color: #1af33bde;">Insurance Claims</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home insurance claims</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+        
+           <hr>
+           <p style="color: #1af33bde;">CapitalGuard Customers</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+           
+            </div>
+              <button onclick="smallscreen(5)"  id="but1" ><p><b> Life Events   ( Help and Support) </b></p> </button>
+              <div id="smalla5" class="divas2">
+                <p style="color: #1af33bde;">Life Event</p>
+                <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="berievement.html">Bereavement Support</a></p> 
+                <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="seperation.html">Separation Support</a></p>
+              <hr>
+              <p style="color: #1af33bde;">Planning Tools</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Financial Health Check</a> </p>
+              
+                <p style="color: #1af33bde;">Customer Support</p>
+                <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="services.html">Ways we can help</a></p>
+               
+                 <p style="color: #1af33bde;">Individual Review</p>
+                 <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+        </div>
+  
+    <script src="index.js"></script>
+    <script src="student.js"></script>
+    
+    
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e587ef1-2546-44bf-a34f-91dd266b8881";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
+    </body>
+    </html>

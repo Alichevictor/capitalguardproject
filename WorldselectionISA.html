@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--TITLE-->
+<title>World Selection ISA</title>
+<style>
+  body{
+    font-family: "Inter";
+    font-size: 14px;
+  }
+  #links{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 10px;
+  left: 4%;
+}
+#links > div{
+  margin-right: 5px;
+}
+#translate-button-wrapper{
+  position: relative;
+  left: 1%;
+ 
+}
+@media only screen and (max-width: 1000px) { 
+#upcontainer{
+  height: 80px;width: 300px;
+  background-color: white;position: absolute;padding: 10px;
+  left: 10%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+}
+#upcontainer3{
+  height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  }
+  #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8% !important;  }
+    
+}
+@media only screen and (max-width: 600px) {
+  #upcontainer3{
+    height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+   }
+
+   #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8%;  }  
+}
+
+#upcontainer5{height: 100px;width: 300px;
+  background-color: white;padding: 20px;
+     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  position: relative;top: 20% !important;left: 10%;
+    }
+</style>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<link rel="shortcut icon" href="images/newlogo.jpg">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="Responsive.css">
+<link href="https://fonts.googleapis.com/icon?family=Inter" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ </head>
+  <body>
+    <div id="starter">
+  <h3 id="needhelp">Contact Us:  <a style="color: white;font-weight: lighter;font-size: small;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></h3>
+ <div id="links">
+  <div><button id="botnz"><a href="index.html" style="color: white;">Home</a></button></div>  
+ <div><button id="botnz" ><a href="sign-in.html" style="color: white;">Sign in</a></button></div>  
+ <div><button id="botnzz" ><a href="register.html" style="color: white;">Sign up</a></button></div>  
+ <div id="translate-button-wrapper">
+  <div id="google_translate_element"></div>
+</div>
+   <script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+   }
+   </script>
+</div>
+  </div>
+ 
+     
+ 
+  <div style="position: sticky;top: 0;background-color: #fafafb;height: 80px; z-index: 5000;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.998),  0 0px 5px 0 rgba(0, 0, 0, 0.19)" >
+    <img src="images/newlogo.jpg" id="ingo">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="span">&#9776;</span>
+    
+    <div style="position: absolute;left: 20%;" id="dropID" >
+    <ul style="margin-top: 0;margin-bottom:20px ;" >
+
+<li onclick="dropdown(1)">
+<p id="color">Banking Services <i class="arrow down"></i></p>
+<p id="colorz">Accounts and Services</p>
+<li>
+
+<li onclick="dropdown(2)">
+  <p id="color">Borrowing  		<i class="arrow down"></i></p>
+  <p id="colorz">Loans and Mortgages</p>
+</li>
+
+<li onclick="dropdown(3)">
+  <p id="color">Investing 	<i class="arrow down"></i> </p>
+  <p id="colorz">Products and Analysis</p>
+</li>
+
+<li onclick="dropdown(4)">
+  <p id="color">Insurance 	<i class="arrow down"></i></p>
+  <p id="colorz">Property and family</p>
+</li>
+
+<li onclick="dropdown(5)">
+  <p id="color" >Life Events 	<i class="arrow down"></i> </p>
+  <p id="colorz">Help and Support</p>
+</li>
+</ul>
+</div>
+
+
+ <!--drop down page 1-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown1">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-42%;" >
+    <h2 id="bluez">Current Accounts</h2>
+    <p><a href="capitalguard_acc.html">CapitalGuard account</a></p>
+    <p><a href="advance-acc.html">Advance account</a></p>
+    <p><a href="student_acc.html">Student account</a></p>
+    <p><a href="bank_acc.html">Bank account</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-42%;">
+    <h2 id="bluez">Savings</h2>
+    <p><a href="savings.html">ISAs</a></p>
+            <p><a href="savings.html">Online bonus saver</a></p>
+            <p><a href="savings.html">flexible saver</a></p><br>
+  </div>
+  <div id="current" style="position: relative;top:-24%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+    <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+    <p><a href="Credit-cards.html">Dual credit card </a></p>
+    <p><a href="classic credit card"></a></p>
+    <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+    <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+    <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;;"class="currentz" >
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="services.html">ways to bank</a></p>
+    <p><a href="services.html">Voice ID</a></p>
+    <p><a href="services.html">Contact and Support</a></p>
+    <p><a href="services.html">Find a branch</a></p>
+    <h2>International Services</h2>
+    <p ><a href="international_services.html">Currency Account</a></p>
+    <p><a href="international_services.html">International payments</a></p>
+    <p><a href="international_services.html">Travel money</a></p>
+  </div>
+  <button onclick="close1()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close1(){
+    document.getElementById("dropdown1").style.display="none";
+  }
+  </script>
+</div>
+
+
+
+ <!--drop down page2-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown2">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-20%;">
+    <h2 id="bluez">Loan</h2>
+    <p><a href="personal-loans.html">personal loan</a></p>
+    <p><a href="car-loans.html">Car loan</a></p>
+    <p><a href="flexible-loan.html">flexiloan</a></p>
+    <p><a href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+    <p><a href="graduate-loan.html">Graduate loan</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-10%;">
+    <h2 id="bluez">Mortgages</h2>
+    <p><a href="First time buyer.html">First time buyer</a></p>
+    <p><a href="95percent-Mortgages.html">95% Mortgages</a></p>
+    <p><a href="Remortgage.html">Remortgage</a></p>
+    <p><a href="buy to let.html">Buy to let</a></p>
+    <p><a href="mortgage rates.html">Mortgage rates</a></p>
+    <p><a href="armed forces.html">Armed forces personel</a></p>
+  </div>
+  <div id="current" style="position: relative;top:-10%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+            <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+            <p><a href="Credit-cards.html">Dual credit card </a></p>
+            <p><a href="classic credit card"></a></p>
+            <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+            <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+            <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-2%;;" class="currentz">
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="borrowingService.html">Help & Support</a></p>
+    <p><a href="borrowingService.html">Money worries</a></p>
+    <h2><a href="borrowingService.html">Tools & Guides</a></h2>
+    <p><a href="borrowingService.html">Overpayment calculator</a></p>
+    <p><a href="borrowingService.html">Base rate information</a></p> 
+    <br><br> 
+  </div>
+  <button onclick="close2()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close2(){
+    document.getElementById("dropdown2").style.display="none";
+  }
+  </script>
+</div>
+
+  <!--drop down pages3-->
+  <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown3">
+    <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:1%;" >
+      <h2 id="bluez"> Investments</h2>
+      <p><a href="investmentfund.html">Investment Funds</a></p>
+              <p><a href="WorldselectionISA.html">World Selection ISA</a></p>
+              <p><a href="sharedealing.html">Sharedealing</a></p>
+              <p><a href="financial advice.html">CapitalGuard financial advice</a></p>
+              <p><a href="onshoreinvestment.html">Onshore investment bond</a></p>
+              <p><a href="child trust fund.html">Child trust fund</a></p>
+    </div>
+    <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-45%;">
+      <h2 id="bluez">Why invest in us</h2>
+      <p><a href="why invest.html">Find out more</a></p>
+    </div>
+    <div id="current" style="position: relative;top:0%">
+
+    </div>
+    <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-50%;;" class="currentz">
+      <h2 style="margin-top: 25px;" >Customer Support</h2>
+      <p><a href="services.html">Getting Started with Investing</a></p>
+    </div>
+    <button onclick="close3()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+    <script>
+      function close3(){
+      document.getElementById("dropdown3").style.display="none";
+    }
+    </script>
+  </div>
+
+     <!--drop down page4-->
+     <div style="height: 350px;width: 90%; display: none;"   class="stack" id="dropdown4">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-10%">
+        <h2 id="bluez">Insurance</h2>
+        <p><a href="home insurance.html">Home Insurance</a></p>
+        <p><a href="travel insurance.html">Travel Insurance</a></p>
+        <p><a href="student insurance.html">Student Insurance</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;">
+        <h2 id="bluez">Life Insurance</h2>
+        <p><a href="life insurance.html">Life Cover</a></p>
+        <p><a href="life insurance.html">Critical Illness Cover</a></p>
+        <p><a href="life insurance.html">Income Cover</a></p>
+        <p><a href="protection telephone advice.html">Telephone Protection Advice</a></p>
+      </div>
+      <div id="current" style="position: relative;top:-9%" >
+        <h2 id="bluez">Insurance Claims</h2>
+        <p><a href="home insurance.html">Home insurance claims</a></p>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-11%" class="currentz">
+        <h2 style="margin-top: 25px;" >CapitalGuard Customers</h2>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <button onclick="close4()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close4(){
+        document.getElementById("dropdown4").style.display="none";
+      }
+      </script>
+    </div>
+
+    <!--drop down page 5-->
+    <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown5">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-40%">
+        <h2 id="bluez">Life Event</h2>
+       <p><a href="berievement.html">Bereavement Support</a></p> 
+        <p><a href="seperation.html">Separation Support</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-48%">
+        <h2 id="bluez">Planning Tools</h2>
+       <p><a href="review.html">Financial Health Check</a> </p>
+     
+      </div>
+      <div id="current" style="position: relative;top:-55%">
+       
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-10%" class="currentz">
+        <h2 style="margin-top: 25px;" >Customer Support</h2>
+        <p><a href="services.html">Ways we can help</a></p>
+      
+        <h2 >Individual Review</h2>
+        <p><a href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+      <button onclick="close5()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close5(){
+        document.getElementById("dropdown5").style.display="none";
+      }
+      </script>
+    </div>
+  </div>
+
+          <div style="height: 300px;background-image: url(images/TopBackground_image.jpg);background-repeat: no-repeat;background-size: cover;">
+            <div id="upcontainer4">
+            <h2 id="bluez" style="font-weight:30px;">WORLD SELECTION ISA</h2>
+            <p>A professionally managed, ready made portfolio</p>
+            </div>
+            </div>
+
+<div style="margin: 10px;padding: 30px;">
+<h2 style="color: #0000ff;">The CapitalGuard Financial Union World Selection Stocks and Shares ISA makes it simple to invest at your preferred level of risk, with a range of portfolios, managed by qualified CapitalGuard Financial Union investment professionals.</h2>
+
+<div id="Features-and-benefits">
+  <div>
+    <p>Start investing with as little as $50 per month or a $1,000 lump sum</p> 
+    <p>Invest up to $20,000 in this tax year</p>
+     <p>A ready-made portfolio will be managed by our team of qualified investment professionals, hand picking diverse assets, to maintain your chosen risk level
+   </p>    
+</div>
+
+ <div>
+   <p>Exclusive to capitalguard Financial Union current or savings account customers.</p>  
+   <p> Withdraw or top up whenever you like</p>
+   <p>Benefit from a range of asset classes, geographies and currencies</p>
+   <p>Simple online application</p>
+ </div>
+</div>
+
+
+<div id="p">
+<div id="universal" >
+    <div>
+       <p>Start investing with as little as $50 per month or a $1,000 lump sum</p> 
+       <p>Invest up to $20,000 in this tax year</p>
+        <p>A ready-made portfolio will be managed by our team of qualified investment professionals, hand picking diverse assets, to maintain your chosen risk level
+      </p>    
+</div>
+
+    <div>
+      <p>Exclusive to capitalguard Financial Union current or savings account customers.</p>  
+      <p> Withdraw or top up whenever you like</p>
+      <p>Benefit from a range of asset classes, geographies and currencies</p>
+      <p>Simple online application</p>
+    </div>
+</div>
+</div>
+<br>
+<p>The value of investments (and any income received from them) can fall as well as rise and you may not get back what you invested. It's important to remember that most investments should be held over the medium to long-term and therefore you should be prepared to commit for at least 5 years.</p>
+<button style="background-color:rgb(101, 167, 15) ;height: 50px;width: 300px;color: #0000ff;border:0px solid #eb0d57de ;border-radius: 2px;color: white;">Log on to choose your risk level</button>
+
+<br><br>
+<hr>
+
+<h1 style="border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color:#0000ff;">FAQ's</h1>
+<button onclick="openza(1)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How do i make investment choice?</button>
+<div id="open1" class="divas2" style="width: 90%;">
+    <p> When choosing an investment, you should consider the level of risk you are willing to take and your capacity for loss. How comfortable would you feel if your investments fell in value? How would a loss impact your finances in the short term? In the long term?
+    </p>  
+     <p> The Key Investor Information Document (KIID) includes information which will help you to make an investment choice.
+    </p>      
+      <p>You will only be able to invest into one World Selection Portfolio each tax year within your World Selection ISA.When thinking about your investment choice you should consider the level of risk you are willing to take and your capacity for loss. This should include considering questions about how comfortable you would feel if your investments fell in value and the potential impact of this on your financial situation in both the short or longer term.
+    </p>
+</div >
+<button onclick="openza(2)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">What is world selection ISA?</button>
+<div id="open2" class="divas2" style="width: 90%;">
+  <p> The World Selection ISA is a stocks and shares ISA, a tax efficient way of investing, provided through our Selected Investment Funds (SIF) service. Not all features of SIF will be available.
+</p> 
+  <p>Individual customers can invest up to $20,000 into a single World Selection Portfolio for the tax year ending 5 April 2019.
+</p>      
+   <p>The investment portfolios within the World Selection ISA are managed by CapitalGuard Financial Union Global Asset Management (UK) Limited.
+</p> 
+</div >
+<button onclick="openza(3)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">Who might the world selection ISA be suitable for?</button>
+<div id="open3" class="divas2" style="width: 90%;">
+   <p>You may want to consider this investment if:</p> 
+
+   <p> You've some experience of investing in stocks and shares or other investments</p>
+   <p>You want to make your own investment decisions without a personal recommendation from us</p> 
+   <p> You've a minimum of $1,000 lump sum or $50 per month to invest</p>
+    <p>You're willing to accept a level of risk for this investment over the medium to long term</p>
+    <p>You have NOT invested in a stocks and shares ISA for the current tax year with capitalguard Financial Union or another ISA manager</p>
+   <p> You have NOT exceeded your ISA subscription limit in total for a cash ISA, a stocks and shares ISA, an innovative finance ISA and a lifetime ISA in the same tax year.
+</p>
+</div>
+<button onclick="openza(4)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How much does it cost?</button>
+<div id="open4" class="divas2" style="width: 90%;">
+   <p><b> Total Charges = Account Fee + Ongoing Charge</b></p>
+
+    <p></p>Total account charges include the Account Fee and the Ongoing charge.
+    
+    <p></p><b>The Account Fee</b> is for services we provide in connection with your Account such as buying and selling shares, sending statements and applying distribution income. The Account Fee is payable directly by you from your World Selection ISA.
+    
+    <p><b>The Ongoing Charge</b> is made up of the Annual Management Charge and Other Expenses. It is payable to the manager of the World Selection portfolio (capitalguard Financial Union Global Asset Management (UK) Limited). You will not see this charge shown on a statement - instead of being taken from your investment, it is reflected in the price of the shares.
+ </p>   
+   <p><b>Ongoing Charge = Annual Management Charge + Other Expenses</b></p> 
+    
+   <p><b>The Annual Management Charge </b>is payable to capitalguard Financial Union Global Asset Management (UK) Limited for managing the World Selection portfolio.
+</p>     
+ <p><b>Other Expenses</b> cover the costs that must be met to ensure the World Selection portfolio is appropriately governed and administered (including services such as depositary and audit fees).
+</p>   
+
+<table>
+<tr>
+    <td>World Selection Portfolio Name</td>
+    <td>Annual Management Charge %</td>
+    <td></td>
+    <td>Other Expenses %</td>
+    <td></td>
+    <td>Ongoing Charge %</td>
+    <td></td>
+    <td>Account Fee %</td>
+    <td></td>
+    <td>Total Charges %</td>
+</tr>
+<tr>
+    <td>capitalguard Financial Union World Selection Income</td>
+    <td>0.55</td>
+    <td>+</td>
+    <td>0.32</td>
+    <td>=</td>
+    <td>0.87</td>
+    <td>+</td>
+    <td>0.25</td>
+    <td>=</td>
+    <td>1.12</td>
+</tr>
+
+<tr>
+    <td>capitalguard Financial Union World Selection Cautious</td>
+    <td>0.55</td>
+    <td>+</td>
+    <td>0.26</td>
+    <td>=</td>
+    <td>0.81</td>
+    <td>+</td>
+    <td>0.25</td>
+    <td>=</td>
+    <td>1.16</td>
+</tr>
+
+<tr>
+    <td>capitalguard Financial Union World Selection Balanced</td>
+    <td>0.55</td>
+    <td>+</td>
+    <td>0.26</td>
+    <td>=</td>
+    <td>0.81</td>
+    <td>+</td>
+    <td>0.25</td>
+    <td>=</td>
+    <td>1.16</td>
+</tr>
+
+
+<tr>
+    <td>capitalguard Financial Union World Selection Dynamic</td>
+    <td>0.55</td>
+    <td>+</td>
+    <td>0.26</td>
+    <td>=</td>
+    <td>0.81</td>
+    <td>+</td>
+    <td>0.25</td>
+    <td>=</td>
+    <td>1.16</td>
+</tr>
+</table>
+
+<p>Full details of charges are available in the capitalguard Financial Union Selected Investment Funds Key Features Document (PDF) and capitalguard Financial Union World Selection ISA – Fund Information Document (PDF). The Ongoing Charges information in this table is from the Key Investor Information Document (KIID) which is updated from time to time. Please refer to the KIID for the latest Ongoing Charge information before you invest. Please also refer to the relevant Costs and Charges Disclosure Document for the portfolio you wish to invest in.
+</p>
+<p>Details of charges are available in the capitalguard Financial Union Selected Investment Funds Key Features Document and the capitalguard Financial Union World Selection ISA - Fund Information Document. You should also ensure you read the relevant Costs and Charges Disclosure Document and relevant Key Investor Information Document (KIID), which are both updated from time to time, for the portfolio you wish to invest in.
+</p> 
+ </div>
+<button onclick="openza(5)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">can i transfer an existing ISA to you?</button>
+<div id="open5" class="divas2"  style="width: 90%;">
+   <p>You may transfer all or part of an existing ISA held with us or another ISA manager into your World Selection ISA. If you wish to transfer subscriptions made in the current tax year then all subscriptions made in the current tax year must be transferred.
+</p>  
+  <p>In order to request an ISA transfer, you will need to complete an ISA Transfer Form (available by contacting us using the Contact Details in the Key Features Document) and return it to us by post. We will then contact the relevant ISA manager(s) on your behalf and arrange the transfer for you.
+</p>   
+ <p>You can only transfer World Selection Portfolios held with another ISA manager directly into the World Selection ISA. Any other funds held with another ISA manager will be transferred as cash into the World Selection ISA and you will need to tell us on the ISA Transfer Form which World Selection Portfolio you want the cash to be invested in. You will only be able to invest into one World Selection Portfolio each tax year within your World Selection ISA.
+</p>   
+ <p> Should you wish to transfer all or part of an existing cash or stocks and shares ISA held with us or another ISA manager into your World Selection ISA, there may be a period of time when your ISA holding will be held in cash and therefore not subject to any investment gains or losses.
+</p></div>
+<button onclick="openza(6)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How can i manage my ISA in future?</button>
+<div id="open6" class="divas2"  style="width: 90%;">
+   <p>You will receive regular updates on the value of your World Selection ISA in your quarterly statements. These are sent out during January, April, July and October each year.
+</p>   
+ <p>You can make further investments into the same or an alternative World Selection Portfolio (a single Portfolio is allowed for each tax year), switch between World Selection Portfolios or sell your holdings either in writing or by telephone. Please note that all instructions to buy and/or sell Shares in the relevant capitalguard Financial Union World Selection Portfolio, whether in writing or by telephone which are received after 12pm will be treated as though they were received at 9am on the following business day.
+</p>
+ </div>
+<button onclick="openza(7)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">What is a key Investor information Document?</button>
+<div id="open7" class="divas2"  style="width: 90%;">
+   <p>Key Investor Information Documents (or KIID) contain details about fund objectives and charges, along with information relating to the risk and reward profile of each portfolio.
+</p>  
+  <p>This risk and reward profile has a scale from 1-7. 1 Profiles have lower risk and typically lower returns; 7s have higher risk, but also typically higher returns. The capitalguard Financial Union World Selection Portfolios are rated from 3 to 5 on this risk and reward profile scale. The rating is based on price volatility over the last five years, and is an indicator of absolute risk.
+</p>  
+  <p>However, past performance is not a reliable indicator of future results. The rating is not guaranteed to remain unchanged, and the classification may shift over time. If the rating does change,  capitalguard Financial Union would notify you in your half yearly statement. Please refer to the KIID for further information.
+</p> 
+</div>
+<button onclick="openza(8)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">What is a cost and charged document</button>
+<div id="open8" class="divas2"  style="width: 90%;">
+   <p>From 3 January 2018, a key piece of European legislation called MiFID II applies to financial services that are regulated in the country. Part of the MiFID II legislation requires us to provide you with the most recent version of a ‘Costs and Charges Disclosure Document’ before you make any investment in to your chosen portfolio within the World Selection ISA.
+</p>  
+  <p> When you telephone or place a deal on-line you will be asked to confirm that you have read the appropriate Costs and Charges Disclosure Document before we can proceed with your investment instruction.
+</p>   
+ <p>The Costs and Charges Disclosure Document provides you with a generic example of the costs and charges associated with your Account (both the product, service and ancillary costs) in a percentage and monetary amount. There is also an illustration of the potential cumulative effect of costs on the return of your investment over time.
+</p>  
+  <p>Please note the illustrations in each Costs and Charges Disclosure Document are based on assumed growth rates and are not reliable indicators of future performance. Please be aware that you may not get back what you originally invested.
+</p>
+</div>
+<button onclick="openza(9)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">How do i apply</button>
+<div id="open9" class="divas2" style="width: 90%;">
+<p>You must be 18 years of age or older, be a US resident and have a US capitalguard Financial Union current or savings account to invest in the World Selection ISA. </p>
+<p>You should also read and save the Key Investor Information Document (KIID) for the capitalguard Financial Union World Selection Portfolio you choose. You can find this by viewing the key documents within 'Learn more'.
+</p>
+<p>These documents can be found under Related Documents for the fund you wish to invest in and are also provided for you within the World Selection ISA Application Form.
+</p>
+<p>Once we have accepted the application form we will write to confirm that your World Selection ISA has been opened as well as confirming the number of shares you have purchased and the price.
+</p>
+<p>You will receive regular updates on the value of your World Selection ISA in your quarterly statements. These are sent out during January, April, July and October each year.
+</p>
+<p>You can make further investment into your chosen portfolio or sell your holdings either in writing or by phone. Please note that telephone instructions to buy shares which are received after 3.30pm will be treated as though they were received on the following business day. Telephone instructions to sell shares which are received after 5pm will be treated as though they were received on the following business day.
+</p>
+</div>
+<button onclick="openza(10)" style="text-align: left;padding-left: 15px;border: 0px solid #060a80de;height: 50px;width: 96%;color: white;margin-top: 3px;">What are the ISA subscription limit?</button>
+<div id="open10" class="divas2" style="width: 90%;">
+   <p>Because of their tax advantages ISAs are subject to annual subscription limits. The overall ISA subscription limit is $20,000 for the 2017/18 tax year.
+</p> 
+   <p>A payment by you into an ISA in any tax year is called a subscription. You can subscribe to any combination of permitted ISAs in the same tax year, but you cannot exceed the overall maximum ISA allowance of $20,000 for the 2017/18 tax year.
+</p>     
+   <b>Monthly investments</b> 
+    
+    <p>The 2017/18 ISA allowance has been increased to $20,000. Whilst this amount cannot be divided equally into 12 monthly Direct Debit payments (in whole pounds), it is helpful to note that if you are intending to fully subscribe to your ISA, your Direct Debit amount will be automatically adjusted on your final payment to prevent oversubscriptions.
+    
+</p>   
+<p> For example, if you request a Direct Debit of <b>$1,667</b> per month, providing you have not made any further subscriptions to this ISA, the 12th ISA payment will be automatically adjusted to <b> $1,663.</b> (11 payments of $1,667 and 1 payment of $1,663 equals $20,000.)
+</p>    
+   
+<p>Automatic Direct Debit adjustments can only be made as a decrease to the final payment to prevent oversubscription, we are not able to increase the final payment where twelve equal payments would fall short of the total $20,000 limit, e.g. where the monthly Direct Debit is $1,666 or less.
+</p>     
+  <p><b>Please note:</b> it is still your responsibility to monitor your overall ISA subscriptions. The automated Direct Debit adjustment within the World Selection ISA will not take into account subscriptions to other ISAs. We can only accept instructions for Direct Debit payments into the World Selection ISA in whole pounds.
+</p>      
+    <p>The value of the tax benefits described depends on individual circumstances. The tax treatment of ISAs could change in the future.
+</p>    
+  <p>The value of investments (and any income received from them) can fall as well as rise and you may not get back what you invested. For some investments this can also happen as a result of exchange rate fluctuations as shares and funds may have an exposure to overseas markets.
+</p>      
+   <p>Because of their tax advantages ISAs are subject to annual subscription limits. The overall ISA subscription limit is $20,000 for the 2018/19 tax year.
+</p>     
+    <p>A payment by you into an ISA in any tax year is called a subscription. You can subscribe to any combination of permitted ISAs in the same tax year, but you cannot exceed the overall maximum ISA allowance of $20,000 for the 2018/19 tax year.
+</p>    
+  <b> Monthly investments</b> 
+    
+    <p>The 2018/19 ISA allowance has been increased to $20,000. Whilst this amount cannot be divided equally into 12 monthly Direct Debit payments (in whole pounds), it is helpful to note that if you are intending to fully subscribe to your ISA, your Direct Debit amount will be automatically adjusted on your final payment to prevent oversubscriptions.
+</p>    
+   <p>For example, if you request a Direct Debit of $1,667 per month, providing you have not made any further subscriptions to this ISA, the 12th ISA payment will be automatically adjusted to $1,663. (11 payments of $1,667 and 1 payment of $1,663 equals $20,000.)
+</p>     
+   <p> Automatic Direct Debit adjustments can only be made as a decrease to the final payment to prevent oversubscription, we are not able to increase the final payment where twelve equal payments would fall short of the total $20,000 limit, e.g. where the monthly Direct Debit is $1,666 or less.
+</p>    
+ <b> Please note:</b> <p> it is still your responsibility to monitor your overall ISA subscriptions. The automated Direct Debit adjustment within the World Selection ISA will not take into account subscriptions to other ISAs. We can only accept instructions for Direct Debit payments into the World Selection ISA in whole pounds.
+</p>     
+  <p> The value of the tax benefits described depends on individual circumstances. The tax treatment of ISAs could change in the future.
+</p>     
+    <p>The value of investments (and any income received from them) can fall as well as rise and you may not get back what you invested. For some investments this can also happen as a result of exchange rate fluctuations as shares and funds may have an exposure to overseas markets.
+</p>
+</div>
+
+<div style="border: 1px solid rgb(189, 236, 189);background-color:rgb(189, 236, 189) ;padding: 20px;margin: 30px;">
+<p>Lines are open 8am - 6pm Monday to Friday (excluding public holidays). Calls may be monitored or recorded for quality purposes.*Please note the capitalguard Financial Union World Selection Income Portfolio can only accept lump sum investments.
+Bank’s World Selection ISA aims to provide information to help you make your own informed decisions. Our World Selection ISA journey should not be taken as personal recommendation that a particular investment is suitable for you or your personal circumstances.
+Therefore capitalguard Financial Union is not required to assess the suitability of this ISA for you, which means that the protection offered by the Financial Conduct Authority's rules on assessing suitability will not apply.
+If you have any doubts about whether this ISA is suitable for your needs, you should seek advice from a Financial Adviser. You may be charged for any advice you receive.
+The value of investments (and any income received from them) can fall as well as rise and you may not get back the amount invested.
+For some investments this can also happen as a result of exchange rate fluctuations as shares and funds may have an exposure to overseas markets.
+Most investments should be considered as a medium to long-term commitment, meaning you should be prepared to hold them for at least five years.
+</p>
+<p>The value of any tax benefits described depends on your individual circumstances. Tax rules may change in the future.
+</p>
+<p>The World Selection ISA is offered by capitalguard Financial Union Trust Company (UK) Limited.capitalguard Financial Union Trust Company (UK) Limited is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority, and is entered on the Financial Services Register as number 119297.
+You can check this on the Financial Services Register at www.fca.org.uk. Our main business is the provision of trustee services and administering investments.
+</p>
+<p>This webpage is a financial promotion, issued by capitalguard Financial Union US capitalguard Financial Union plc. capitalguard Financial Union US capitalguard Financial Union plc is authorised by the Prudential Regulation Authority (PRA) and regulated by the Financial Conduct Authority (FCA) and the Prudential Regulation Authority and is entered on the Financial Services Register. Our firm reference number is 765112.
+</p>
+</div>
+
+
+</div>
+
+<div style="height: 150px;box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.998),  0 6px 15px 0 rgba(0, 0, 0, 0.19)">
+    <div style="margin-left: 8%;padding-top: 20px;">
+      <h1 style="color:#0000ff">Connect with us</h1>
+  <p>Listening to what you have to say about our services matters to us.</p></div>
+  
+  </div>
+  
+  <div id="foots">
+    <div id="footer" >
+    <div>
+    <h3>HELP AND SUPPORT </h3>
+    <p>Got a question? We are here to help <br>you</p>
+  </div>
+      
+  <div>
+    <h3>OUR PERFORMANCE</h3>
+    <p>Get information about our <br> performance</p>
+  </div>
+    
+  <div>
+   <h3>ABOUT CAPITALGUARD BANK</h3>
+    <p>Careers, media, investor and corporate information</p>
+  </div>
+  </div>
+    
+    <div>
+        <p style="text-align: center;">
+          Federally-insured by the National Credit Administration. we do business in accordance with the Fair Law and Equal oppurtunity Credit Act.
+        </p>
+        <br>
+        <p style="text-align: center;margin-top: 0%;">PO Box: Ermyn Way, Leatherhead KT24 6UX</p>
+      </div>
+      <img id="imago" src="images/newlogo.jpg" alt="logo" style="height: 80px;width: 80px; position: relative;top: -15%;left: 12%;">
+    
+      <p style="text-align: center; color: rgb(216, 211, 211);">© 2023 CapitalGuard Bank- All rights reserved.</p>
+  
+  </div>
+
+
+
+
+
+    <div id="mySidenav" class="sidenav">
+      <h3 style="color: white;text-align: center;">Menu</h3>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <button onclick="smallscreen(1)" id="but1" ><p><b>Banking Services (Accounts and Services)</b></p></button>
+      <div id="smalla1" class="divas2" >
+  <div >
+          <p style="color: #1af33bde;">Current Accounts</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="capitalguard_acc.html">CapitalGuard account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="advance-acc.html">Advance account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="student_acc.html">Student account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="bank_acc.html">Bank account</a></p>
+        <hr>
+          <p style="color: #1af33bde;">Savings</p>
+          <p> <a style="font-size: smaller;padding: 0;margin-left: 10px;" href="savings.html">ISAs</a></p>
+                  <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">Online bonus saver</a></p>
+                  <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">flexible saver</a></p><br>
+       <hr>
+          <p style="color: #1af33bde;">Credit cards</p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">32 month transfer credit card</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Advance Credit Card</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Dual credit card </a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="classic credit card"></a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard credit card</a> </p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Student credit card</a></p>
+       <hr>
+          <p  style="color: #1af33bde;">Services</p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">ways to bank</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Voice ID</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Contact and Support</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Find a branch</a></p>
+          <p style="color: #1af33bde;">International Services</p>
+          <p ><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Currency Account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">International payments</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Travel money</a></p>
+    
+        </div>
+      </div>
+      
+        <button onclick="smallscreen(2)"  id="but1" ><p><b>Borrowing ( Loans and Mortgages) </b></p></button>
+        <div id="smalla2" class="divas2">
+          <div >
+            <p style="color: #1af33bde;">Loan</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="personal-loans.html">personal loan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car-loans.html">Car loan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="flexible-loan.html">flexiloan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="graduate-loan.html">Graduate loan</a></p>
+         <hr>
+          <p style="color: #1af33bde;">Mortgages</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="First time buyer.html">First time buyer</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="95percent-Mortgages.html">95% Mortgages</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Remortgage.html">Remortgage</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="buy to let.html">Buy to let</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="mortgage rates.html">Mortgage rates</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="armed forces.html">Armed forces personel</a></p>
+       
+         <hr>
+            <p style="color: #1af33bde;">Credit cards</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">32 month transfer credit card</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Advance Credit Card</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Dual credit card </a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="classic credit card"></a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard credit card</a> </p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Student credit card</a></p>
+         <hr>
+         <p style="color: #1af33bde;" >Services</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Help & Support</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Money worries</a></p>
+            <p style="color: #1af33bde;" >Tools & Guides</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Overpayment calculator</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Base rate information</a></p> 
+            
+          </div>
+        </div>
+  
+          <button onclick="smallscreen(3)"  id="but1"><p><b> Investing  (Products and Analysis) </b></p></button>
+          <div id="smalla3" class="divas2">
+            <p style="color: #1af33bde;"> Investments</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="investmentfund.html">Investment Funds</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="WorldselectionISA.html">World Selection ISA</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="sharedealing.html">Sharedealing</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="financial advice.html">CapitalGuard financial advice</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="onshoreinvestment.html">Onshore investment bond</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="child trust fund.html">Child trust fund</a></p>
+        
+        <hr>
+            <p style="color: #1af33bde;">Why invest in us</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="why invest.html">Find out more</a></p>
+        
+          <hr>
+           <p style="color: #1af33bde;" >Customer Support</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Getting Started with Investing</a></p>
+      
+          </div>
+  
+            <button onclick="smallscreen(4)"  id="but1" ><p><b> Insurance  (Property and family) </b></p>  </button>
+            <div id="smalla4" class="divas2">
+              <p style="color: #1af33bde;">Insurance</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home Insurance</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel Insurance</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="student insurance.html">Student Insurance</a></p>
+    
+            <hr>
+              <p style="color: #1af33bde;">Life Insurance</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Life Cover</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Critical Illness Cover</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Income Cover</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="protection telephone advice.html">Telephone Protection Advice</a></p>
+          
+          <hr>
+          <p style="color: #1af33bde;">Insurance Claims</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home insurance claims</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+        
+           <hr>
+           <p style="color: #1af33bde;">CapitalGuard Customers</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+            </div>
+              <button onclick="smallscreen(5)"  id="but1" ><p><b> Life Events   ( Help and Support) </b></p> </button>
+              <div id="smalla5" class="divas2">
+                <p style="color: #1af33bde;">Life Event</p>
+                <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="berievement.html">Bereavement Support</a></p> 
+                <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="seperation.html">Separation Support</a></p>
+              <hr>
+              <p style="color: #1af33bde;">Planning Tools</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Financial Health Check</a> </p>
+              
+                <p style="color: #1af33bde;">Customer Support</p>
+                <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="services.html">Ways we can help</a></p>
+               
+                 <p style="color: #1af33bde;">Individual Review</p>
+                 <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+        </div>
+  
+
+
+<script src="index.js"></script>
+<script src="student.js"></script>
+
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e587ef1-2546-44bf-a34f-91dd266b8881";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+</body>
+</html>

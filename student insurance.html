@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--TITLE-->
+<title>Student Insurance</title>
+
+<style>
+  body{
+    font-family: "Inter";
+    font-size: 14px;
+  }
+  #links{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 10px;
+  left: 4%;
+}
+#links > div{
+  margin-right: 5px;
+}
+#translate-button-wrapper{
+  position: relative;
+  left: 1%;
+ 
+}
+@media only screen and (max-width: 1000px) { 
+#upcontainer{
+  height: 80px;width: 300px;
+  background-color: white;position: absolute;padding: 10px;
+  left: 10%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+}
+#upcontainer3{
+  height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  }
+  #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8% !important;  }
+    
+}
+@media only screen and (max-width: 600px) {
+  #upcontainer3{
+    height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+   }
+
+   #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8%;  }  
+}
+
+#upcontainer5{height: 100px;width: 300px;
+  background-color: white;padding: 20px;
+     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  position: relative;top: 20% !important;left: 10%;
+    }
+</style>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<link rel="shortcut icon" href="images/newlogo.jpg">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="Responsive.css">
+<link href="https://fonts.googleapis.com/icon?family=Inter" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  </head>
+  <body>
+    <div id="starter">
+  <h3 id="needhelp">Contact Us:  <a style="color: white;font-weight: lighter;font-size: small;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></h3>
+ <div id="links">
+  <div><button id="botnz"><a href="index.html" style="color: white;">Home</a></button></div>  
+ <div><button id="botnz" ><a href="sign-in.html" style="color: white;">Sign in</a></button></div>  
+ <div><button id="botnzz" ><a href="register.html" style="color: white;">Sign up</a></button></div>  
+ <div id="translate-button-wrapper">
+  <div id="google_translate_element"></div>
+</div>
+   <script type="text/javascript">
+   function googleTranslateElementInit() {
+     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+   }
+   </script>
+</div>
+  </div>
+ 
+     
+ 
+  <div style="position: sticky;top: 0;background-color: #fafafb;height: 80px; z-index: 5000;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.998),  0 0px 5px 0 rgba(0, 0, 0, 0.19)" >
+    <img src="images/newlogo.jpg" id="ingo">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="span">&#9776;</span>
+    
+    <div style="position: absolute;left: 20%;" id="dropID" >
+    <ul style="margin-top: 0;margin-bottom:20px ;" >
+
+<li onclick="dropdown(1)">
+<p id="color">Banking Services <i class="arrow down"></i></p>
+<p id="colorz">Accounts and Services</p>
+<li>
+
+<li onclick="dropdown(2)">
+  <p id="color">Borrowing  		<i class="arrow down"></i></p>
+  <p id="colorz">Loans and Mortgages</p>
+</li>
+
+<li onclick="dropdown(3)">
+  <p id="color">Investing 	<i class="arrow down"></i> </p>
+  <p id="colorz">Products and Analysis</p>
+</li>
+
+<li onclick="dropdown(4)">
+  <p id="color">Insurance 	<i class="arrow down"></i></p>
+  <p id="colorz">Property and family</p>
+</li>
+
+<li onclick="dropdown(5)">
+  <p id="color" >Life Events 	<i class="arrow down"></i> </p>
+  <p id="colorz">Help and Support</p>
+</li>
+</ul>
+</div>
+
+
+ <!--drop down page 1-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown1">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-42%;" >
+    <h2 id="bluez">Current Accounts</h2>
+    <p><a href="capitalguard_acc.html">CapitalGuard account</a></p>
+    <p><a href="advance-acc.html">Advance account</a></p>
+    <p><a href="student_acc.html">Student account</a></p>
+    <p><a href="bank_acc.html">Bank account</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-42%;">
+    <h2 id="bluez">Savings</h2>
+    <p><a href="savings.html">ISAs</a></p>
+            <p><a href="savings.html">Online bonus saver</a></p>
+            <p><a href="savings.html">flexible saver</a></p><br>
+  </div>
+  <div id="current" style="position: relative;top:-24%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+    <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+    <p><a href="Credit-cards.html">Dual credit card </a></p>
+    <p><a href="classic credit card"></a></p>
+    <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+    <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+    <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;;"class="currentz" >
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="services.html">ways to bank</a></p>
+    <p><a href="services.html">Voice ID</a></p>
+    <p><a href="services.html">Contact and Support</a></p>
+    <p><a href="services.html">Find a branch</a></p>
+    <h2>International Services</h2>
+    <p ><a href="international_services.html">Currency Account</a></p>
+    <p><a href="international_services.html">International payments</a></p>
+    <p><a href="international_services.html">Travel money</a></p>
+  </div>
+  <button onclick="close1()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close1(){
+    document.getElementById("dropdown1").style.display="none";
+  }
+  </script>
+</div>
+
+
+
+ <!--drop down page2-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown2">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-20%;">
+    <h2 id="bluez">Loan</h2>
+    <p><a href="personal-loans.html">personal loan</a></p>
+    <p><a href="car-loans.html">Car loan</a></p>
+    <p><a href="flexible-loan.html">flexiloan</a></p>
+    <p><a href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+    <p><a href="graduate-loan.html">Graduate loan</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-10%;">
+    <h2 id="bluez">Mortgages</h2>
+    <p><a href="First time buyer.html">First time buyer</a></p>
+    <p><a href="95percent-Mortgages.html">95% Mortgages</a></p>
+    <p><a href="Remortgage.html">Remortgage</a></p>
+    <p><a href="buy to let.html">Buy to let</a></p>
+    <p><a href="mortgage rates.html">Mortgage rates</a></p>
+    <p><a href="armed forces.html">Armed forces personel</a></p>
+  </div>
+  <div id="current" style="position: relative;top:-10%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+            <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+            <p><a href="Credit-cards.html">Dual credit card </a></p>
+            <p><a href="classic credit card"></a></p>
+            <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+            <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+            <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-2%;;" class="currentz">
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="borrowingService.html">Help & Support</a></p>
+    <p><a href="borrowingService.html">Money worries</a></p>
+    <h2><a href="borrowingService.html">Tools & Guides</a></h2>
+    <p><a href="borrowingService.html">Overpayment calculator</a></p>
+    <p><a href="borrowingService.html">Base rate information</a></p> 
+    <br><br> 
+  </div>
+  <button onclick="close2()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close2(){
+    document.getElementById("dropdown2").style.display="none";
+  }
+  </script>
+</div>
+
+  <!--drop down pages3-->
+  <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown3">
+    <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:1%;" >
+      <h2 id="bluez"> Investments</h2>
+      <p><a href="investmentfund.html">Investment Funds</a></p>
+              <p><a href="WorldselectionISA.html">World Selection ISA</a></p>
+              <p><a href="sharedealing.html">Sharedealing</a></p>
+              <p><a href="financial advice.html">CapitalGuard financial advice</a></p>
+              <p><a href="onshoreinvestment.html">Onshore investment bond</a></p>
+              <p><a href="child trust fund.html">Child trust fund</a></p>
+    </div>
+    <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-45%;">
+      <h2 id="bluez">Why invest in us</h2>
+      <p><a href="why invest.html">Find out more</a></p>
+    </div>
+    <div id="current" style="position: relative;top:0%">
+
+    </div>
+    <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-50%;;" class="currentz">
+      <h2 style="margin-top: 25px;" >Customer Support</h2>
+      <p><a href="services.html">Getting Started with Investing</a></p>
+    </div>
+    <button onclick="close3()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+    <script>
+      function close3(){
+      document.getElementById("dropdown3").style.display="none";
+    }
+    </script>
+  </div>
+
+     <!--drop down page4-->
+     <div style="height: 350px;width: 90%; display: none;"   class="stack" id="dropdown4">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-10%">
+        <h2 id="bluez">Insurance</h2>
+        <p><a href="home insurance.html">Home Insurance</a></p>
+        <p><a href="travel insurance.html">Travel Insurance</a></p>
+        <p><a href="student insurance.html">Student Insurance</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;">
+        <h2 id="bluez">Life Insurance</h2>
+        <p><a href="life insurance.html">Life Cover</a></p>
+        <p><a href="life insurance.html">Critical Illness Cover</a></p>
+        <p><a href="life insurance.html">Income Cover</a></p>
+        <p><a href="protection telephone advice.html">Telephone Protection Advice</a></p>
+      </div>
+      <div id="current" style="position: relative;top:-9%" >
+        <h2 id="bluez">Insurance Claims</h2>
+        <p><a href="home insurance.html">Home insurance claims</a></p>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-11%" class="currentz">
+        <h2 style="margin-top: 25px;" >CapitalGuard Customers</h2>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <button onclick="close4()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close4(){
+        document.getElementById("dropdown4").style.display="none";
+      }
+      </script>
+    </div>
+
+    <!--drop down page 5-->
+    <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown5">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-40%">
+        <h2 id="bluez">Life Event</h2>
+       <p><a href="berievement.html">Bereavement Support</a></p> 
+        <p><a href="seperation.html">Separation Support</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-48%">
+        <h2 id="bluez">Planning Tools</h2>
+       <p><a href="review.html">Financial Health Check</a> </p>
+     
+      </div>
+      <div id="current" style="position: relative;top:-55%">
+       
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-10%" class="currentz">
+        <h2 style="margin-top: 25px;" >Customer Support</h2>
+        <p><a href="services.html">Ways we can help</a></p>
+      
+        <h2 >Individual Review</h2>
+        <p><a href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+      <button onclick="close5()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close5(){
+        document.getElementById("dropdown5").style.display="none";
+      }
+      </script>
+    </div>
+  </div>
+
+
+          <div style="height: 320px;background-image: url(images/student-lecture.jpg);background-repeat: no-repeat;background-size: cover;">
+            <div id="upcontainer5" style="top: 8%;">
+            <h2 id="bluez" style="font-weight:30px;">STUDENT INSURANCE</h2>
+            <p>We take care of your personal possesions while you focus on your studies</p>
+            </div>
+            </div>
+
+            <div style="margin: 10px;padding: 30px;">
+
+                <div id="banner" style="height: 750px;width: 90%;margin-left: 15px;">
+                    <div id="banner3">
+                        <h3 style="color: #0000ff;"> CAPITALGUARD FINANCIAL UNION STUDENT INSURANCE</h3>
+                       
+                        <p>While you concentrate on your studies, you can trust capitalguard Financial Union Student Insurance to take care of your personal possessions.
+     </p>                             
+          <p>  4 levels of cover</p>                 
+           <p> Choose the level of cover that suits you - $2,000, $3,000, $4,000 or $5,000
+     </p>                                         
+              <p> Up to $500 per item</p>              
+               <p>You can claim up to $500 for each individual item that is lost or damaged
+     </p>                                      
+                 <p>  Accidental damage protection</p>          
+                  <p> Cover included for your home entertainment equipment, mirrors and glass - up to $250 per incident
+     </p>                                  
+                    <p>Covers your cash</p>         
+                     <p>Get up to $100 if your cash is lost or stolen</p>        
+                             
+                <p> Optional extras</p>            
+                  <p> Tailor your cover to include pedal cycles, computers and more   </p>               
+                 </div>
+
+              <div id="p" style="background-color:#0000ff;width: 30%;padding:20px;margin-right: -37px;height: 510px;;color: white;">
+              <h2>Start your application</h2>  
+
+ <p> capitalguard Financial Union Insurance is provided by Aviva Insurance Limited and is designed to offer you the protection you need when you move away from home for the first time.
+</p>                              
+  <p>Please ensure you see the full eligibiltiy requirements before applying.            
+</p>      
+ </div>
+</div>
+
+<hr style="margin-top: 4%;margin-bottom: 4%;">
+
+<h1 style="border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #0000ff;">More details</h1>
+ 
+<h2 style="color: rgb(101, 167, 15);">4 levels of cover from $25</h2>
+<p>You can choose cover limits between $2,000 and $5,000 and protect yourself from the financial cost of loss or damage to your contents while you are a student. Cover includes fire, storm, flood and theft following forcible and violent entry/exit from your accommodation.
+</p>
+<h2 style="color: rgb(101, 167, 15);">Accidental damage protection</h2>
+<p>We’ll cover your home entertainment equipment, mirrors and glass up to $250 per incident. We’ll also cover home computers (not laptops), games consoles, receiving aerials, dishes and CCTV cameras that are fixed to the building.
+</p>
+<h2 style="color: rgb(101, 167, 15);">Optional extras</h2>
+<div style="margin-left: 5%;">
+<p>You can also choose these optional extras:</p>
+
+<p>Personal belongings: covers items you wear or carry outside your accommodation (within the British Isles)
+</p>
+<p>Personal computer equipment: covers equipment in your possession in and away from your accommodation, including installed software (excluding mobile phones)
+</p>
+<p>Pedal cycles: covers loss or damage anywhere within the British Isles as long as your cycle is locked to an immovable object or in a locked building that only you access
+</p>
+</div>
+
+<hr style="margin-top: 4%;margin-bottom: 4%;">
+<h1 style="border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #0000ff;">What's covered?</h1>
+ <div id="Features-and-benefits">
+  <div  style="height: 350px;">
+    <h2 style="color: rgb(101, 167, 15);">Standard policy features</h2>     
+   <h3>Individual item</h3> 
+    <p>Policy limits: $500, Policy excesses: $50</p>
+    
+   <h3>Accidental damage cover</h3> 
+  <p>Policy limits: $250, Policy excesses: $50</p>  
+    
+ <h3>Loss or theft of cash</h3>   
+  <p>Policy limits: $100, Policy excesses: $50</p>  
+    
+  <h3>Personal and occupier's liability</h3>  
+  <p>Policy limits: $2million, Policy excesses: $50</p>  
+</div>
+<div  style="height: 350px;">
+    <h2 style="color: rgb(101, 167, 15);">Optional extras for all 4 levels of cover</h2> 
+<h3>Personal belongings cover</h3>
+<p>Between $500 and $2,000 ($500 per individual item)</p>
+
+<h3>Pedal cycles</h3>
+<p>$500</p>
+
+<h3>Personal computer equipment</h3>
+<p>$2,000 (including $250 for installed software)</p>
+</div>
+ </div>
+<div id="p">
+<div id="universal" style="height: 350px;">
+    <div  style="height: 350px;">
+        <h2 style="color: rgb(101, 167, 15);">Standard policy features</h2>     
+       <h3>Individual item</h3> 
+        <p>Policy limits: $500, Policy excesses: $50</p>
+        
+       <h3>Accidental damage cover</h3> 
+      <p>Policy limits: $250, Policy excesses: $50</p>  
+        
+     <h3>Loss or theft of cash</h3>   
+      <p>Policy limits: $100, Policy excesses: $50</p>  
+        
+      <h3>Personal and occupier's liability</h3>  
+      <p>Policy limits: $2million, Policy excesses: $50</p>  
+    </div>
+    <div  style="height: 350px;">
+        <h2 style="color: rgb(101, 167, 15);">Optional extras for all 4 levels of cover</h2> 
+<h3>Personal belongings cover</h3>
+<p>Between $500 and $2,000 ($500 per individual item)</p>
+
+<h3>Pedal cycles</h3>
+<p>$500</p>
+
+<h3>Personal computer equipment</h3>
+<p>$2,000 (including $250 for installed software)</p>
+ </div>
+</div>
+</div>
+<hr style="margin-top: 4%;margin-bottom: 4%;">
+
+
+<h1  style="border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #0000ff;"> What's not covered?</h1>
+
+<h2 style="color: rgb(101, 167, 15);">General</h2>
+<div style="margin-left: 5%;">
+<p>You will have to pay the first part of most claims - this is known as an excess. Your schedule details the excesses which apply to your policy
+</p>
+<p>Limits apply for certain covers; the limits are shown on your schedule and in your policy booklet
+</p>
+<p>Certain loss or damage (for example theft or malicious damage) caused by you or members of your household
+</p>
+<p>Damage caused by chewing, scratching, tearing or fouling by domestic animals
+</p>
+<p>Clause(s) may apply which exclude certain losses or damage. These will appear on your schedule
+</p>
+<p>You must comply with the conditions of the policy explained in the General Conditions section of the policy booklet for cover to apply. These include your duty to take reasonable precautions to prevent accident, loss or damage and actions you must take as soon as you become aware of a possible claim under this policy. See also the General Exclusions section of the policy booklet for those exclusions that apply to all sections.
+</p>
+</div>
+<h2 style="color: rgb(101, 167, 15);">Student contents</h2>
+<div style="margin-left: 5%;">
+<p>Motorised vehicles, aircraft, caravans, watercraft of any kind</p>
+<p>Loss or damage to pedal cycles in the garden (but wider cover is available under Pedal Cycles)</p>
+<p>Accidental damage to video cameras, mobile phones, hearing aids, games consoles and portable computer equipment (but wider cover is available under the Personal computer section and Personal belongings section)
+</p>
+<p>Loss or damage to your contents by any cause not listed in the policy booklet (but wider cover is available under the Personal belongings section)
+</p>
+</div>
+<h2 style="color: rgb(101, 167, 15);">Money and credit cards</h2>
+<div style="margin-left: 5%;">
+<p>Loss or theft not reported to the police</p>
+<p>Loss or theft of credit and debit cards not reported to the card issuing company within 24 hours of discovering the loss
+</p>
+</div>
+<hr style="margin-top: 4%;margin-bottom: 4%;">
+<h1 style="border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #0000ff;">How to apply</h1>
+
+<h2>Eligibility</h2>
+<p>Please ensure you can answer YES to the following questions:</p>
+
+<p></p>Are you a full-time student attending a university or college situated in the United Kingdom (or part-time if you are receiving a Disabled Student Allowance)?
+<p>Are you applying for contents cover only?</p>
+<p>Can you confirm you do not possess any one item you wish to insure with this policy that exceeds $500 in value (this does not apply to the personal computer equipment option)?
+</p>
+<p>Can you confirm you do not require contents cover in excess of $5,000? For higher levels of cover please call our insurance helpline on to speak to one of our customer service representatives who will be available to provide you with a quote.
+</p>
+<p>Can you confirm you have never had any criminal convictions, police cautions or have any prosecutions pending?
+</p>
+<p>Can you confirm you have never had insurance refused, cancelled or offers with terms imposed?</p>
+<br>
+<h2 style="color: rgb(101, 167, 15);">Apply online</h2>
+<p>Get a quote and apply for a student insurance policy online.</p>
+<button style="height: 40px;width: 300px;background-color:rgb(101, 167, 15);;color:rgb(8, 8, 8);font-size:16px;border:0px solid rgb(248, 8, 84);border-radius:5px"><a href="services.html">Apply now</a></button>
+
+<hr style="margin-top: 4%;margin-bottom: 4%;">
+<h1 style="border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #0000ff;">Make a claim</h1>
+<p>Contact our helpline numbers for assistance as soon as you can, quoting your policy number if possible.
+</p>
+<h2 style="color: rgb(101, 167, 15);">What you'll need to hand when making a claim</h2>
+<div style="margin-left: 5%;"><p>Your policy number</p>
+<p>Your policyholder name and address</p></div>
+<h2 style="color: rgb(101, 167, 15);">Your cancellation rights</h2>
+<p>You have a statutory right to cancel your policy within 14 days from the day of purchase or renewal of the policy or the day on which you receive your policy or renewal documentation, whichever is the later.
+</p>
+
+<hr style="margin-top: 4%;margin-bottom: 1%;">
+ <div style="margin: 10px;padding: 50px;">
+<table>
+<tr>
+    <th>What if an individual is worth more than $500</th>
+</tr>
+<tr>
+    <td>The single item limit is $500. Please call us on to see if we can still give you a quote.</td>
+</tr>
+
+
+<tr>
+    <th>My Tv is $300 so what happens if it's accidentally damaged</th>
+</tr>
+<tr>
+    <td>The maximum amount we pay for accidental damage is $250.</td>
+</tr>
+
+<tr>
+    <th>Will my belongings be covered if i am abroad on holiday</th>
+</tr>
+<tr>
+    <td>You will only be covered if you and/or your possessions are within the British Isles (certain standard cover items must be in your term time residence).</td>
+</tr>
+
+
+<tr>
+    <th>Is my mobile phone covered</th>
+</tr>
+<tr>
+    <td>Mobile phones are not covered by this policy.</td>
+</tr>
+
+<tr>
+    <th>Will pedal cycle protect my bike if it's kept in the hall of my shared house</th>
+</tr>
+<tr>
+    <td>If your pedal cycle is kept in the hallway of a shared house it will need to be locked to an immovable object.</td>
+</tr>
+    </table>
+
+</div>
+</div>
+<div style="height: 150px;box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.998),  0 6px 15px 0 rgba(0, 0, 0, 0.19)">
+    <div style="margin-left: 8%;padding-top: 20px;">
+      <h1 style="color:#0000ff">Connect with us</h1>
+  <p>Listening to what you have to say about our services matters to us.</p></div>
+  
+  </div>
+  
+  <div id="foots">
+    <div id="footer" >
+    <div>
+    <h3>HELP AND SUPPORT </h3>
+    <p>Got a question? We are here to help <br>you</p>
+  </div>
+      
+  <div>
+    <h3>OUR PERFORMANCE</h3>
+    <p>Get information about our <br> performance</p>
+  </div>
+    
+  <div>
+   <h3>ABOUT CAPITALGUARD BANK</h3>
+    <p>Careers, media, investor and corporate information</p>
+  </div>
+  </div>
+    
+    <div>
+        <p style="text-align: center;">
+          Federally-insured by the National Credit Administration. we do business in accordance with the Fair Law and Equal oppurtunity Credit Act.
+        </p>
+        <br>
+        <p style="text-align: center;margin-top: 0%;">PO Box: Ermyn Way, Leatherhead KT24 6UX</p>
+      </div>
+      <img id="imago" src="images/newlogo.jpg" alt="logo" style="height: 80px;width: 80px; position: relative;top: -15%;left: 12%;">
+    
+      <p style="text-align: center; color: rgb(216, 211, 211);">© 2023 CapitalGuard Bank- All rights reserved.</p>
+  </div>
+
+
+
+    <div id="mySidenav" class="sidenav">
+      <h3 style="color: white;text-align: center;">Menu</h3>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <button onclick="smallscreen(1)" id="but1" ><p><b>Banking Services (Accounts and Services)</b></p></button>
+      <div id="smalla1" class="divas2" >
+  <div >
+          <p style="color: #1af33bde;">Current Accounts</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="capitalguard_acc.html">CapitalGuard account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="advance-acc.html">Advance account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="student_acc.html">Student account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="bank_acc.html">Bank account</a></p>
+        <hr>
+          <p style="color: #1af33bde;">Savings</p>
+          <p> <a style="font-size: smaller;padding: 0;margin-left: 10px;" href="savings.html">ISAs</a></p>
+                  <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">Online bonus saver</a></p>
+                  <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">flexible saver</a></p><br>
+       <hr>
+          <p style="color: #1af33bde;">Credit cards</p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">32 month transfer credit card</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Advance Credit Card</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Dual credit card </a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="classic credit card"></a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard credit card</a> </p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Student credit card</a></p>
+       <hr>
+          <p  style="color: #1af33bde;">Services</p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">ways to bank</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Voice ID</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Contact and Support</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Find a branch</a></p>
+          <p style="color: #1af33bde;">International Services</p>
+          <p ><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Currency Account</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">International payments</a></p>
+          <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Travel money</a></p>
+    
+        </div>
+      </div>
+      
+        <button onclick="smallscreen(2)"  id="but1" ><p><b>Borrowing ( Loans and Mortgages) </b></p></button>
+        <div id="smalla2" class="divas2">
+          <div >
+            <p style="color: #1af33bde;">Loan</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="personal-loans.html">personal loan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car-loans.html">Car loan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="flexible-loan.html">flexiloan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="graduate-loan.html">Graduate loan</a></p>
+         <hr>
+          <p style="color: #1af33bde;">Mortgages</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="First time buyer.html">First time buyer</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="95percent-Mortgages.html">95% Mortgages</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Remortgage.html">Remortgage</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="buy to let.html">Buy to let</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="mortgage rates.html">Mortgage rates</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="armed forces.html">Armed forces personel</a></p>
+       
+         <hr>
+            <p style="color: #1af33bde;">Credit cards</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">32 month transfer credit card</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Advance Credit Card</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Dual credit card </a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="classic credit card"></a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard credit card</a> </p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Student credit card</a></p>
+         <hr>
+         <p style="color: #1af33bde;" >Services</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Help & Support</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Money worries</a></p>
+            <p style="color: #1af33bde;" >Tools & Guides</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Overpayment calculator</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Base rate information</a></p> 
+            
+          </div>
+        </div>
+  
+          <button onclick="smallscreen(3)"  id="but1"><p><b> Investing  (Products and Analysis) </b></p></button>
+          <div id="smalla3" class="divas2">
+            <p style="color: #1af33bde;"> Investments</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="investmentfund.html">Investment Funds</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="WorldselectionISA.html">World Selection ISA</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="sharedealing.html">Sharedealing</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="financial advice.html">CapitalGuard financial advice</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="onshoreinvestment.html">Onshore investment bond</a></p>
+                    <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="child trust fund.html">Child trust fund</a></p>
+        
+        <hr>
+            <p style="color: #1af33bde;">Why invest in us</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="why invest.html">Find out more</a></p>
+        
+          <hr>
+           <p style="color: #1af33bde;" >Customer Support</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Getting Started with Investing</a></p>
+      
+          </div>
+  
+            <button onclick="smallscreen(4)"  id="but1" ><p><b> Insurance  (Property and family) </b></p>  </button>
+            <div id="smalla4" class="divas2">
+              <p style="color: #1af33bde;">Insurance</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home Insurance</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel Insurance</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="student insurance.html">Student Insurance</a></p>
+    
+            <hr>
+              <p style="color: #1af33bde;">Life Insurance</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Life Cover</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Critical Illness Cover</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Income Cover</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="protection telephone advice.html">Telephone Protection Advice</a></p>
+          
+          <hr>
+          <p style="color: #1af33bde;">Insurance Claims</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home insurance claims</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+        
+           <hr>
+           <p style="color: #1af33bde;">CapitalGuard Customers</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+           
+            </div>
+              <button onclick="smallscreen(5)"  id="but1" ><p><b> Life Events   ( Help and Support) </b></p> </button>
+              <div id="smalla5" class="divas2">
+                <p style="color: #1af33bde;">Life Event</p>
+                <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="berievement.html">Bereavement Support</a></p> 
+                <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="seperation.html">Separation Support</a></p>
+              <hr>
+              <p style="color: #1af33bde;">Planning Tools</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Financial Health Check</a> </p>
+              
+                <p style="color: #1af33bde;">Customer Support</p>
+                <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="services.html">Ways we can help</a></p>
+               
+                 <p style="color: #1af33bde;">Individual Review</p>
+                 <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+        </div>
+  
+    <script src="index.js"></script>
+    <script src="student.js"></script>
+  
+    
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e587ef1-2546-44bf-a34f-91dd266b8881";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+   </body>
+   </html>

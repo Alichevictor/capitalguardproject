@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--TITLE-->
+<title>Savings plans</title>
+<style>
+  body{
+    font-family: "Inter";
+    font-size: 14px;
+  }
+  #links{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 10px;
+  left: 4%;
+}
+#links > div{
+  margin-right: 5px;
+}
+#translate-button-wrapper{
+  position: relative;
+  left: 1%;
+ 
+}
+@media only screen and (max-width: 1000px) { 
+#upcontainer{
+  height: 80px;width: 300px;
+  background-color: white;position: absolute;padding: 10px;
+  left: 10%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+}
+#upcontainer3{
+  height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10% !important;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  }
+  #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8% !important;  }
+    
+}
+@media only screen and (max-width: 600px) {
+  #upcontainer3{
+    height: 210px;width: 200px;
+  background-color: white;position: absolute;padding: 20px;
+  left: 6%;top: 10%;   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+   }
+
+   #upcontainer4{height: 150px;width: 200px;padding: 10px;position: absolute;
+    left: 6%;top: 8%;  }  
+}
+
+#upcontainer5{height: 100px;width: 300px;
+  background-color: white;padding: 20px;
+     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.998),  0 6px 30px 0 rgba(0, 0, 0, 0.19);border-radius: 5px;
+  position: relative;top: 20% !important;left: 10%;
+    }
+</style>
+ <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<link rel="shortcut icon" href="images/newlogo.jpg">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="Responsive.css">
+<link href="https://fonts.googleapis.com/icon?family=Inter" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  </head>
+  <body>
+    <div id="starter">
+      <h3 id="needhelp">Contact Us:  <a style="color: white;font-weight: lighter;font-size: small;"  href="mailto:capitalg@capitalguard.cc"> capitalg@capitalguard.cc</a></h3>
+     <div id="links">
+      <div><button id="botnz"><a href="index.html" style="color: white;">Home</a></button></div>  
+     <div><button id="botnz" ><a href="sign-in.html" style="color: white;">Sign in</a></button></div>  
+     <div><button id="botnzz" ><a href="register.html" style="color: white;">Sign up</a></button></div>  
+     <div id="translate-button-wrapper">
+      <div id="google_translate_element"></div>
+    </div>
+       <script type="text/javascript">
+       function googleTranslateElementInit() {
+         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+       }
+       </script>
+    </div>
+      </div>
+     
+     
+ 
+  <div style="position: sticky;top: 0;background-color: #fafafb;height: 80px; z-index: 5000;box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.998),  0 0px 5px 0 rgba(0, 0, 0, 0.19)" >
+    <img src="images/newlogo.jpg" id="ingo">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="span">&#9776;</span>
+    
+    <div style="position: absolute;left: 20%;" id="dropID" >
+    <ul style="margin-top: 0;margin-bottom:20px ;" >
+
+<li onclick="dropdown(1)">
+<p id="color">Banking Services <i class="arrow down"></i></p>
+<p id="colorz">Accounts and Services</p>
+<li>
+
+<li onclick="dropdown(2)">
+  <p id="color">Borrowing  		<i class="arrow down"></i></p>
+  <p id="colorz">Loans and Mortgages</p>
+</li>
+
+<li onclick="dropdown(3)">
+  <p id="color">Investing 	<i class="arrow down"></i> </p>
+  <p id="colorz">Products and Analysis</p>
+</li>
+
+<li onclick="dropdown(4)">
+  <p id="color">Insurance 	<i class="arrow down"></i></p>
+  <p id="colorz">Property and family</p>
+</li>
+
+<li onclick="dropdown(5)">
+  <p id="color" >Life Events 	<i class="arrow down"></i> </p>
+  <p id="colorz">Help and Support</p>
+</li>
+</ul>
+</div>
+
+
+ <!--drop down page 1-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown1">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-42%;" >
+    <h2 id="bluez">Current Accounts</h2>
+    <p><a href="capitalguard_acc.html">CapitalGuard account</a></p>
+    <p><a href="advance-acc.html">Advance account</a></p>
+    <p><a href="student_acc.html">Student account</a></p>
+    <p><a href="bank_acc.html">Bank account</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-42%;">
+    <h2 id="bluez">Savings</h2>
+    <p><a href="savings.html">ISAs</a></p>
+            <p><a href="savings.html">Online bonus saver</a></p>
+            <p><a href="savings.html">flexible saver</a></p><br>
+  </div>
+  <div id="current" style="position: relative;top:-24%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+    <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+    <p><a href="Credit-cards.html">Dual credit card </a></p>
+    <p><a href="classic credit card"></a></p>
+    <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+    <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+    <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;;"class="currentz" >
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="services.html">ways to bank</a></p>
+    <p><a href="services.html">Voice ID</a></p>
+    <p><a href="services.html">Contact and Support</a></p>
+    <p><a href="services.html">Find a branch</a></p>
+    <h2>International Services</h2>
+    <p ><a href="international_services.html">Currency Account</a></p>
+    <p><a href="international_services.html">International payments</a></p>
+    <p><a href="international_services.html">Travel money</a></p>
+  </div>
+  <button onclick="close1()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close1(){
+    document.getElementById("dropdown1").style.display="none";
+  }
+  </script>
+</div>
+
+
+
+ <!--drop down page2-->
+ <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown2">
+  <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-20%;">
+    <h2 id="bluez">Loan</h2>
+    <p><a href="personal-loans.html">personal loan</a></p>
+    <p><a href="car-loans.html">Car loan</a></p>
+    <p><a href="flexible-loan.html">flexiloan</a></p>
+    <p><a href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+    <p><a href="graduate-loan.html">Graduate loan</a></p>
+  </div>
+  <div  id="current" style="border-right: 1px solid #0000ff; position: relative;top:-10%;">
+    <h2 id="bluez">Mortgages</h2>
+    <p><a href="First time buyer.html">First time buyer</a></p>
+    <p><a href="95percent-Mortgages.html">95% Mortgages</a></p>
+    <p><a href="Remortgage.html">Remortgage</a></p>
+    <p><a href="buy to let.html">Buy to let</a></p>
+    <p><a href="mortgage rates.html">Mortgage rates</a></p>
+    <p><a href="armed forces.html">Armed forces personel</a></p>
+  </div>
+  <div id="current" style="position: relative;top:-10%;">
+    <h2 id="bluez">Credit cards</h2>
+    <p><a href="Credit-cards.html">32 month transfer credit card</a></p>
+            <p><a href="Credit-cards.html">Advance Credit Card</a></p>
+            <p><a href="Credit-cards.html">Dual credit card </a></p>
+            <p><a href="classic credit card"></a></p>
+            <p><a href="Credit-cards.html">CapitalGuard credit card</a> </p>
+            <p><a href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+            <p><a href="Credit-cards.html">Student credit card</a></p>
+  </div>
+  <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-2%;;" class="currentz">
+    <h2 style="margin-top: 25px;" >Services</h2>
+    <p><a href="borrowingService.html">Help & Support</a></p>
+    <p><a href="borrowingService.html">Money worries</a></p>
+    <h2><a href="borrowingService.html">Tools & Guides</a></h2>
+    <p><a href="borrowingService.html">Overpayment calculator</a></p>
+    <p><a href="borrowingService.html">Base rate information</a></p> 
+    <br><br> 
+  </div>
+  <button onclick="close2()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+  <script>
+    function close2(){
+    document.getElementById("dropdown2").style.display="none";
+  }
+  </script>
+</div>
+
+  <!--drop down pages3-->
+  <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown3">
+    <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:1%;" >
+      <h2 id="bluez"> Investments</h2>
+      <p><a href="investmentfund.html">Investment Funds</a></p>
+              <p><a href="WorldselectionISA.html">World Selection ISA</a></p>
+              <p><a href="sharedealing.html">Sharedealing</a></p>
+              <p><a href="financial advice.html">CapitalGuard financial advice</a></p>
+              <p><a href="onshoreinvestment.html">Onshore investment bond</a></p>
+              <p><a href="child trust fund.html">Child trust fund</a></p>
+    </div>
+    <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-45%;">
+      <h2 id="bluez">Why invest in us</h2>
+      <p><a href="why invest.html">Find out more</a></p>
+    </div>
+    <div id="current" style="position: relative;top:0%">
+
+    </div>
+    <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-50%;;" class="currentz">
+      <h2 style="margin-top: 25px;" >Customer Support</h2>
+      <p><a href="services.html">Getting Started with Investing</a></p>
+    </div>
+    <button onclick="close3()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+    <script>
+      function close3(){
+      document.getElementById("dropdown3").style.display="none";
+    }
+    </script>
+  </div>
+
+     <!--drop down page4-->
+     <div style="height: 350px;width: 90%; display: none;"   class="stack" id="dropdown4">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-10%">
+        <h2 id="bluez">Insurance</h2>
+        <p><a href="home insurance.html">Home Insurance</a></p>
+        <p><a href="travel insurance.html">Travel Insurance</a></p>
+        <p><a href="student insurance.html">Student Insurance</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;">
+        <h2 id="bluez">Life Insurance</h2>
+        <p><a href="life insurance.html">Life Cover</a></p>
+        <p><a href="life insurance.html">Critical Illness Cover</a></p>
+        <p><a href="life insurance.html">Income Cover</a></p>
+        <p><a href="protection telephone advice.html">Telephone Protection Advice</a></p>
+      </div>
+      <div id="current" style="position: relative;top:-9%" >
+        <h2 id="bluez">Insurance Claims</h2>
+        <p><a href="home insurance.html">Home insurance claims</a></p>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-11%" class="currentz">
+        <h2 style="margin-top: 25px;" >CapitalGuard Customers</h2>
+        <p><a href="travel insurance.html">Travel insurance claims</a></p>
+        <p><a href="car insurance.html">Car insurance claims</a></p>
+      </div>
+      <button onclick="close4()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close4(){
+        document.getElementById("dropdown4").style.display="none";
+      }
+      </script>
+    </div>
+
+    <!--drop down page 5-->
+    <div style="height: 350px;width: 90%; display: none;"  class="stack" id="dropdown5">
+      <div id="current" style="border-right: 1px solid #0000ff;position: relative;top:-40%">
+        <h2 id="bluez">Life Event</h2>
+       <p><a href="berievement.html">Bereavement Support</a></p> 
+        <p><a href="seperation.html">Separation Support</a></p>
+      </div>
+      <div  id="current" style="border-right: 1px solid #0000ff;position: relative;top:-48%">
+        <h2 id="bluez">Planning Tools</h2>
+       <p><a href="review.html">Financial Health Check</a> </p>
+     
+      </div>
+      <div id="current" style="position: relative;top:-55%">
+       
+      </div>
+      <div id="current" style="background-color:  #0000ff;color: white; height: 330px;position: relative;top:-10%" class="currentz">
+        <h2 style="margin-top: 25px;" >Customer Support</h2>
+        <p><a href="services.html">Ways we can help</a></p>
+      
+        <h2 >Individual Review</h2>
+        <p><a href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+      <button onclick="close5()" style="position: absolute;top: 87%;left: 45%;height: 40px;width: 100px;color: white;background-color: #0000ff;border-radius: 15px;">Close</button>
+      <script>
+        function close5(){
+        document.getElementById("dropdown5").style.display="none";
+      }
+      </script>
+    </div>
+  </div>
+
+          <div style="height: 400px;background-image: url(images/couple-at-table.jpg);">
+            <div id="upcontainer4" style="position: absolute;top: 15%;">
+            <h2 id="bluez" style="font-weight:30px;">OUR SAVING PLANS</h2>
+            <P style="font-size: larger;font-weight:30px;">Designed with your needs in mind</P>
+            </div>
+            </div>
+            
+           
+
+<h1 style="height: 50px;width: 300px;background-color: #0000ff;color:
+ white;border-radius: 5px;text-align: center;padding-top: 15px;margin-left: 8%;">ISAS</h1>
+ <h3 onclick="toggleHeight6()" style="margin-left: 8%;width: 250px;" id="clicker" >click here for more info <i class="arrow down"></i></h3>
+ <div class="write-ups6" id="writeUps6" style="margin-left: 2%;"> 
+<h1 style="border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0000ff;">Get the most from your ISA allowance</h1>
+<p>Your ISA allowance for 2018/2019 is $20,000</p>
+<p>Save with an CapitalGuard Financial Union Cash ISA or Stocks and Shares ISA or a combination of the two     
+</p>
+<h1 style="border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0000ff;">Cash ISAs</h1>
+<p>If you are looking to start saving and want instant access to your money, then a cash ISA could be the right choice. They work like a normal savings account except the interest isn't taxed, so all the interest you earn is yours to keep.</p>
+
+<div id="banner1" >  
+    <div style="width: 45%;">
+<img src="images/isas1.jpg" alt="isas1" height="300px" width="485px">
+<h3 style="color: #0000ff">CapitalGuard Financial Union Loyalty Cash ISA</h3>
+<p>Be rewarded for your loyalty</p>
+<p>Earn interest tax-free</p>
+<p>Open with just $1</p>
+<p>Instant access</p>
+</div>
+
+<div style="width: 45%;">
+        <img src="images/isas2.jpg" alt="isas2" height="300px" width="485px">
+       <h3 style="color: #0000ff">Help to Buy ISA</h3> 
+ <p>Helps you to save towards your first home</p>
+<p>Get a 25% bonus on your savings, up to $3000</p>
+<p>Save up to $200 per month. All the interest is tax free</p>
+<p>Save an additional $1000 in the first month, to help kick start your savings</p>
+  </div>
+<hr style="width: 100%;">
+</div>
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0000ff;">Stocks & Shares ISAs</h1>
+
+<p>A Stocks and Shares ISA has the potential to give a better return than a cash ISA, as it has access to a more diversified range of investments than simply cash. Both are a tax efficient way to invest money as all income and Capital Gains are exempt from US Income Tax, and Capital Gains Tax. Whether you're new or experienced in the world of investing, we may have a solution for you.
+</p>
+<p>If you have an existing Stocks & Shares ISA and would like to top-up, please call 03457 456 123 (textphone 03457 660 391)1
+</p>
+<h4>The value of investments can fall as well as rise and you may not get back what you invested.
+</h4>
+<h4>Most investments should be considered as a medium to long-term commitment; this means you should be prepared to hold them for at least five years.
+</h4>
+<hr style="width: 100%;">
+
+<div id="banner2">
+    <div>
+      <img src="images/isas1.jpg" alt="isas1"  width="340px">
+      <h3 style="color: #0000ff;">CapitalGuard Financial Union ready made portfolio</h3>
+      <h4>World Selection</h4>
+      
+      <p>Choose a ready-made portfolio, managed by our team of qualified investment professionals, based on the amount of risk you are willing to take.
+      </p>
+      <p>Minimum investment: $1,000 lump sum or $50 per month</p>
+      
+     <p>Account charges: 0.25% plus fund charges</p> </div>
+    <div>
+      <img src="images/sitting.jpg" alt="isas1"  width="340px">
+     <h3 style="color: #0000ff;"> Build your own fund portfolio</h3>
+      <h4>Global Investment Centre</h4>
+      
+      <p>Build and manage your own portfolio of funds including index trackers and funds from CapitalGuard Financial Union and other leading Fund Managers. (A taxable account is also available).
+      </p>
+      <p>Minimum investment: $100 lump sum</p>
+      
+      <p>Account charges: 0.39% plus fund charges</p></div>
+    <div>
+      <img src="images/young-couple-with-banker.jpg" alt="isas1"  width="340px">
+      <h3 style="color: #0000ff;">  Build your own share portfoilio</h3>
+     <h4>InvestDirect / InvestDirect Plus</h4> 
+      
+      <p>Build and manage your own portfolio of securities including US and US shares, government bonds and exchange traded funds.
+      </p>
+     <p>Minimum investment: No minimum, with a $10.50 charge per standard online share trade (with effect from 1 April 2016)
+      </p> 
+      <p>Account charges: $10.50 quarterly Account Fee (with effect from 1 January 2016)</p></div>
+</div>
+<hr style="width: 100%;margin-bottom: 5%;">
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0000ff;">CapitalGuard Financial Union CapitalGuard Financial Advice Service</h1>
+<p>If you have more than $50,000 to invest, we can offer you advice on a range of CapitalGuard Financial Union and Non-CapitalGuard Financial Union products. We can help you build a bespoke financial plan with our CapitalGuard Financial Union CapitalGuard Financial Advice Service. Eligibility criteria and fees will apply.
+</p>
+<hr style="width: 100%;margin-bottom: 5%;">
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0000ff;">CapitalGuard Financial Union CapitalGuard Stand-alone Investment Advice</h1>
+<p>If you're interested in discussing any additional investment needs, we now have a new, quicker, simpler* service for smaller investment. Eligibility criteria and fees will apply.</p>
+
+<hr style="width: 100%;margin-bottom: 5%;">
+<h3 style="width: 200px;border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;" id="clicker" >Please bear in mind </h3>
+   <div class="write-ups3" id="writeUps3" style="height: 300px;margin-left: 0;"> 
+   <p> <b>Investment risk:</b> All investments carry some risk. The value of investments (and any income received from them) can fall as well as rise and you may not get back what you invested. For some investments this can also happen as a result of exchange rate fluctuations as shares and funds may have an exposure to overseas markets.
+</p>
+<p><b>Time commitment:</b> Most investments should be considered as a medium to long-term commitment; this means you should be prepared to hold them for at least five years.
+</p>
+<p><b>Tax benefits:</b> The value of any tax benefits described depends upon your individual circumstances - tax rules may change in future.
+</p>
+<p><b>Other risks: </b>In addition to the risks mentioned above, there are other risks associated with investing in our products. These are outlined in the Key Features Document for each product and, where applicable, in the Key Investor Information Document for the underlying fund(s), which you should read carefully before applying.
+</p></div>
+<hr style="width: 100%;">
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0000ff;">Terms and Conditions</h1>
+<p>Lines are open from 8am to 6pm Monday to Friday (excluding public holidays in England). To help us continually improve our services and in the interests of security, we may monitor and/or record your communications with us. Any calls that may or do lead to a transaction will be recorded. We will keep these records for seven years. You can ask for a copy at any time during those seven years.
+</p>
+</div>
+
+<!--Online bonus saver-->
+<hr >
+<h1 style="height: 50px;width: 400px;background-color: #0000ff;color:
+ white;border-radius: 5px;text-align: center;padding-top: 15px;margin-left: 8%;">ONLINE BONUS SAVER</h1>
+<h3 onclick="toggleHeight4()" style="margin-left: 8%;width: 250px;" id="clicker" >click here for more info <i class="arrow down"></i></h3>
+<div class="write-ups4" id="writeUps4" style="margin-left: 8%;"> 
+  <h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0000ff;">Key product information</h1>
+<h2 style="color: rgb(229, 53, 123);padding-top: 10px;">How it works</h2>
+<div style="padding: 0 10px 0 20px;">
+  <p>Our Online Bonus Saver account gives you a variable rate of 0.45% AER/gross (including bonus interest) for any calendar month you don't make a withdrawal. You'll get a variable rate of 0.10% AER/gross in any calendar month you do make a withdrawal or close your account.
+</p>
+<p>You can open an Online Bonus Saver with $1 or more. If you have more than $50,000 in your account, interest is paid at a lower rate on balances above that amount.
+</p>
+</div>
+<hr>
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0000ff;">Summary box</h1>
+<table >
+<tr>
+  <th>Question</th>
+  <th>Answer</th>
+</tr>
+<tr>
+  <td>What is the account name?</td>
+  <td>Online BonusSaver</td>
+</tr>
+<tr>
+  <td>What is the interest rate?</td>
+  <td>Standard Rate
+
+    <p>Interest rate on first $50,000: 0.10% AER (0.10% Gross)</p>
+    <p>Interest rate on any balance over $50,000: 0.10% AER (0.10% Gross)</p>
+    
+    <p>Interest Rate including bonus</p>
+    
+    <p>Interest rate on first $50,000: 0.45% AER (0.45% Gross)</p>
+    <p>Interest rate on any balance over $50,000: 0.25% AER (0.25% Gross)</p>
+    
+    <p>Interest is calculated daily and credited to the account monthly.</p>
+    
+    <p>The standard rate of interest is paid in any month where a withdrawal is made or you close your account.
+    </p>
+    <p>The interest rate including bonus is paid in any month where you don't make a withdrawal or don't close your account.
+    </p>
+    <p>Balances up to $50,000 will earn the higher rate of interest. Only the part of the balance above $50,000 will earn the lower rate of interest.</td>
+</p>
+</tr>
+
+<tr>
+  <td> Can CapitalGuard Financial Union change the interest rate?</td>
+  <td>Yes, the interest rate is variable. We can change the interest rate on this account, in line with the account's Terms and Conditions.</td>
+</tr>
+<tr>
+  <td>What would the estimated balance be after 12 months based on a range of deposits?</td>
+  <td>
+   <h3>Initial Deposit of $1,000</h3>
+
+<p>Standard rate</p>
+
+<p>Interest rate: 0.10% AER (0.10% Gross)</p>
+<p>Balance at end of 12 months: $1,001</p>
+
+<p>Interest rate including bonus</p>
+
+<p>Interest rate: 0.45% AER (0.45% Gross)</p>
+
+<p>Balance at end of 12 months: $1,004.50</p>
+
+<h3>Initial Deposit of $60,000</h3>
+
+<p>Standard rate</p>
+
+<p>Interest rate on 1st 50,000: 0.10% AER (0.10% Gross)</p>
+<p>Interest rate on any balance over $50,000: 0.10% AER (0.10% Gross)</p>
+<p>Balance at end of 12 months: $60,060</p>
+
+<p>Interest rate including bonus</p>
+
+<p>Interest rate on 1st 50,000: 0.45% AER (0.45% Gross)</p>
+<p>Interest rate on any balance over $50,000: 0.25% AER (0.25% Gross)</p>
+
+<p>Balance at end of 12 months: $60,250</p>
+
+<p>For the purpose of this calculation, it is assumed:</p>
+
+<p>Initial deposit of either $1,000 or $60,000</p>
+<h4>No additional deposits</h4>
+<h4>No withdrawal made in any month for the interest rate including bonus calculation</h4>
+<h4>A withdrawal made in every month for the Standard rate calculation</h4>
+<h4>No change to the interest rate during the 12 months</h4>
+<p>Projection provided for illustrative purposes only and does not take into account individual circumstances.
+ </p> 
+</td>
+</tr>
+
+<tr>
+  <td>How do I open & manage my account?</td>
+  <td>
+    <p>Eligibility:</p>
+
+    <h4>Aged 16 years or over</h4>
+    <h4>Able to manage your account online only</h4>
+    <p>How to open the account:</p>
+    <h3>Open an account via Online Service only</h3>
+    <p>Minimum/Maximum Balance:</p>
+    
+    <h3>A minimum of $1 must be deposited to open the account</h3>
+    <h3>The maximum balance you can hold in the account is $2,000,000</h3>
+    <p>How to manage the account</p>
+    
+    <h3>Once opened the account can be managed via Online Service or the CapitalGuard Financial Union US Mobile Banking App</td>
+</h3>
+</tr>
+
+<tr>
+  <td>Can I withdraw money?</td>
+  <td>Yes, you have instant access to your account. You can make as many fee free withdrawals as you like. However if you do make a withdrawal you will receive the standard rate of interest for that month.</td>
+</tr>
+<tr>
+  <td>Additional Information</td>
+  <td>
+    <p></p>A 14 day cancellation period applies to this account.
+
+<p>We do not deduct tax from any interest paid to you.</p>
+
+<p>Tax benefits depend on individual circumstances and could change in the future.</p>
+
+<p>Definitions</p>
+
+<h3>AER stands for Annual Equivalent Rate. This shows you what the gross rate would be if interest were paid and compounded each year.
+</h3>
+<h3>gross is the rate of interest if interest were paid and not compounded each year</h3>
+<p>Rates correct as at 06.04.18</p>
+  </td>
+</tr>
+
+
+</table>
+<hr style="margin-top: 40px;">
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #080808de;">How to apply</h1>
+<p>Customers registered for Online Service can login to apply, while customers not yet registered can register for online service</p>
+<button style="border: 0px solid rgb(101, 167, 15);;border-radius: 5px;height: 40px;width: 200px;background-color: rgb(101, 167, 15);;color: rgb(12, 12, 12);margin-top: 10px;margin-bottom: 10px;"><a href="services.html">Apply now</a></button>
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0c0c0cde;">Non-US tax residents</h1>
+<p>If you’re liable to pay tax outside the country, please apply at your local branch.</p>
+
+<hr style="margin-top: 40px;">
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0000ff;">Frequently Asked Questions</h1>
+
+<button style="text-align: left;padding-left: 15px;border: 0px solid rgb(101, 167, 15);;border-radius: 5px;height: 40px;width: 100%;background-color: rgb(101, 167, 15);;color: rgb(15, 15, 15);margin-top: 10px;margin-bottom: 10px;">Using your Reward points</button>
+<p>You can save from $1. For balances that exceed $50,000 we'll pay a lower rate of interest. See our Interest Rates for current rates.<br>
+Please note that the maximum balance permitted is $2 million.</p>
+<button style="text-align: left;padding-left: 15px;border: 0px solid rgb(101, 167, 15);;border-radius: 5px;height: 40px;width: 100%;background-color: rgb(101, 167, 15);;color: rgb(10, 10, 10);margin-top: 10px;margin-bottom: 10px;">How can i access my savings?</button>
+<p>You can access your Online Bonus Saver Account via Online Service only.</p>
+<button style="text-align: left;padding-left: 15px;border: 0px solid rgb(101, 167, 15);;border-radius: 5px;height: 40px;width: 100%;background-color: rgb(101, 167, 15);;color: rgb(14, 13, 13);margin-top: 10px;margin-bottom: 10px;">How does interest work on this account</button>
+<p>We will pay a variable rate of interest as well as bonus interest for any month when you don't make a withdrawal. Please note, no bonus interest will be paid in any month where a withdrawal is made. Interest is calculated daily and is paid monthly. See our Interest Rates for current rates.</p>
+  </div>
+<hr>
+
+<!--flexible saver-->
+<h1 style="height: 50px;width: 400px;background-color: #0000ff;color:
+ white;border-radius: 5px;text-align: center;padding-top: 15px;margin-left: 8%;">FLEXIBLE SAVER</h1>
+<h3 onclick="toggleHeight5()" style="margin-left: 8%;width: 250px;" id="clicker" >click here for more info <i class="arrow down"></i></h3>
+<div class="write-ups5" id="writeUps5" style="margin-left: 8%;"> 
+  <h1 style=" border-left: 6px solid rgb(101, 167, 15);;padding-left: 10px;color: #0c0c0cde;">Key product information</h1>
+  <h2 style="color: #0000ff;padding-top: 10px;">How it works</h2>
+<div >
+  <p>Flexible Savers help you save for anything, in a way that suits you. You can start your Flexible Saver account with just $1, and pay in lump sums or set up a standing order to save a set amount each month.
+</p>
+  <p>It's an instant access account, so you can put in or take out money whenever you like. There are no charges for withdrawals.
+</p>  
+  <p>You can open as many Flexible Saver accounts as you like – perhaps one for a wedding and another for a holiday.
+  </p>
+  <p>You'll earn interest on your money and if you're an Bank Advance customer you are eligible for a preferential rate. More on Bank Advance
+  </p>
+  <p>Unless you tell us otherwise, we will send you paper statements via the post. If you prefer, you can switch off your paper statements on Online Service.
+</p>
+</div>
+<hr>
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #0b0b0bde;">Summary box</h1>
+<table>
+<tr>
+  <th>Question </th>
+  <th>Answer</th>
+</tr>
+
+<tr>
+  <td>What is the account name?</td>
+  <td>Flexible Saver</td>
+</tr>
+
+<tr>
+  <td>What is the interest rate?</td>
+  <td>
+   <h3>Standard Rate</h3> 
+
+<p>Interest rate on all balances: 0.05% AER/Gross</p>
+
+<h3>Preferential rate</h3>
+
+<p>Interest rate on all balances: 0.10% AER/Gross</p>
+
+<p>Standard Rates - all customers except Bank Advance and Bank Graduate customers.</p>
+<p>Preferential Rates - Bank Advance and Bank Advance Graduate customers only.</p>
+<p>Interest is calculated daily and credited to the account monthly.</p>
+  </td>
+</tr>
+
+<tr>
+  <td>Can Bank change the interest rate?</td>
+  <td>Yes, the interest rate is variable. We can change the interest rate on this account, in line with the account's Terms and Conditions.</td>
+</tr>
+
+<tr>
+  <td>What would the estimated balance be after 12 months based on a $1,000 deposit?</td>
+  <td>
+    <h2>Standard rate</h2>
+
+    <p>Interest rate: 0.05% AER/Gross</p>
+    
+    <p>Balance at end of 12 months: $1,000.50</p>
+    
+    <h2>Preferential rate</h2>
+    
+    <p>Interest rate: 0.10% AER/Gross</p>
+    
+    <p>Balance at end of 12 months: $1,001</p>
+    
+    <p>For the purpose of this calculation, it is assumed:-</p>
+    
+    <h3>Initial deposit of $1,000</h3>
+    <h3>No further deposits</h3>
+    <h3>No change to the interest rate during the 12 months</h3>
+    <p>Projection provided for illustrative purposes only and does not take into account individual circumstances.</td>
+</p>
+</tr>
+
+<tr>
+  <td>How do I open & manage my account?</td>
+  <td>
+    <p>Eligibility:</p>
+
+    <h3>Aged 16 years or over</h3>
+    <p>How to open the account:</p>
+    
+    <h3>Open an account via Online Service, Telephone Banking or in branch</h3>
+    <p>Minimum/Maximum Balance:</p>
+    
+    <h3>A minimum of $1 must be deposited to open the account</h3>
+   <h3>There is no maximum balance</h3> 
+    <p>How to manage the account</p>
+    
+    <h3>Once opened you can view your balance via Online Service, Telephone Banking, the Bank US Mobile Banking App or in branch</td>
+</h3>
+</tr>
+
+<tr>
+  <td>Can I withdraw money?</td>
+  <td>Yes, you have instant access to your account. You can make as many fee free withdrawals as you like.</td>
+</tr>
+
+<tr>
+  <td>Additional Information</td>
+  <td>
+    <p>A 14 day cancellation period applies to this account.</p>
+
+    <p>We do not deduct tax from any interest paid to you.</p>
+    
+    <p>Tax benefits depend on individual circumstances and could change in the future.</p>
+    
+    <p>Definitions</p>
+    
+    <h3>AER stands for Annual Equivalent Rate. This shows you what the gross rate would be if interest were paid and compounded each year.
+    </h3>
+    <h3>Gross is the rate of interest if interest were paid and not compounded each year
+    </h3>
+    <p>Rates correct as at 06.04.18</p>
+</tr>
+</table>
+
+<hr style="margin-top: 40px;">
+<h1  style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #0000ff;">How to apply</h1>
+<p>Customers registered for Online Service can login to apply, while customers not yet registered can register for online service</p>
+<button style="border: 0px solid rgb(101, 167, 15);border-radius: 5px;height: 40px;width: 200px;background-color: rgb(101, 167, 15);color:rgb(11, 11, 11)e;margin-top: 10px;margin-bottom: 10px;"><a href="services.html">Apply now</a></button>
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #0000ff;">Non-US tax residents</h1>
+<p>If you’re liable to pay tax outside the country, please apply at your local branch.</p>
+
+<hr style="margin-top: 40px;">
+<h1 style=" border-left: 6px solid rgb(101, 167, 15);padding-left: 10px;color: #0000ff;">Frequently Asked Questions</h1>
+
+<button style="text-align: left;padding-left: 15px;border: 0px solid rgb(101, 167, 15);border-radius: 5px;height: 40px;width: 100%;background-color: rgb(101, 167, 15);color: rgb(12, 12, 12);margin-top: 10px;margin-bottom: 10px;">How do i apply for a flexible saver account?</button>
+<p>You can apply for a Flexible Saver Account online or by popping into any of our branches.</p>
+<p>If you’re registered for Online Service you can apply online in minutes. It only takes a few minutes to register and once you receive your security details you can apply online to get an instant decision. If you don’t hold an Bank current account then call us to apply or to make an appointment to apply in branch.
+</p>
+<button style="text-align: left;padding-left: 15px;border: 0px solid rgb(244, 37, 72);border-radius: 5px;height: 40px;width: 100%;background-color: rgb(101, 167, 15);color: rgb(5, 5, 5);margin-top: 10px;margin-bottom: 10px;">How much can i save?</button>
+<p>You can save any amount from $1 upwards. There is no maximum balance.</p>
+<button style="text-align: left;padding-left: 15px;border: 0px solid rgb(244, 37, 72);border-radius: 5px;height: 40px;width: 100%;background-color: rgb(101, 167, 15);color: rgb(12, 12, 12);margin-top: 10px;margin-bottom: 10px;">How can i access my savings?</button>
+<p>You can access your money online, by phone or in any of our branches.</p>
+
+<button style="text-align: left;padding-left: 15px;border: 0px solid rgb(244, 37, 72);border-radius: 5px;height: 40px;width: 100%;background-color: rgb(101, 167, 15);color: rgb(12, 12, 12);margin-top: 10px;margin-bottom: 10px;">Are there any preferential rates available?</button>
+<p>Preferential rates are available for Bank Advance customers.</p>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="height: 150px;box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.998),  0 6px 15px 0 rgba(0, 0, 0, 0.19)">
+  <div style="margin-left: 8%;padding-top: 20px;">
+    <h1 style="color:#0000ff">Connect with us</h1>
+<p>Listening to what you have to say about our services matters to us.</p></div>
+
+</div>
+
+<div id="foots">
+  <div id="footer" >
+  <div>
+  <h3>HELP AND SUPPORT </h3>
+  <p>Got a question? We are here to help <br>you</p>
+</div>
+    
+<div>
+  <h3>OUR PERFORMANCE</h3>
+  <p>Get information about our <br> performance</p>
+</div>
+  
+<div>
+ <h3>ABOUT CAPITALGUARD BANK</h3>
+  <p>Careers, media, investor and corporate information</p>
+</div>
+</div>
+  
+  <div>
+      <p style="text-align: center;">
+        Federally-insured by the National Credit Administration. we do business in accordance with the Fair Law and Equal oppurtunity Credit Act.
+      </p>
+      <br>
+      <p style="text-align: center;margin-top: 0%;">PO Box: Ermyn Way, Leatherhead KT24 6UX</p>
+    </div>
+    <img id="imago" src="images/newlogo.jpg" alt="logo" style="height: 80px;width: 80px; position: relative;top: -15%;left: 12%;">
+  
+    <p style="text-align: center; color: rgb(216, 211, 211);">© 2023 CapitalGuard Bank- All rights reserved.</p>
+  
+</div>
+
+
+
+  <div id="mySidenav" class="sidenav">
+    <h3 style="color: white;text-align: center;">Menu</h3>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="smallscreen(1)" id="but1" ><p><b>Banking Services (Accounts and Services)</b></p></button>
+    <div id="smalla1" class="divas2" >
+<div >
+        <p style="color: #1af33bde;">Current Accounts</p>
+        <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="capitalguard_acc.html">CapitalGuard account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="advance-acc.html">Advance account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="student_acc.html">Student account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="bank_acc.html">Bank account</a></p>
+      <hr>
+        <p style="color: #1af33bde;">Savings</p>
+        <p> <a style="font-size: smaller;padding: 0;margin-left: 10px;" href="savings.html">ISAs</a></p>
+                <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">Online bonus saver</a></p>
+                <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="savings.html">flexible saver</a></p><br>
+     <hr>
+        <p style="color: #1af33bde;">Credit cards</p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">32 month transfer credit card</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Advance Credit Card</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Dual credit card </a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="classic credit card"></a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard credit card</a> </p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="Credit-cards.html">Student credit card</a></p>
+     <hr>
+        <p  style="color: #1af33bde;">Services</p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">ways to bank</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Voice ID</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Contact and Support</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Find a branch</a></p>
+        <p style="color: #1af33bde;">International Services</p>
+        <p ><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Currency Account</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">International payments</a></p>
+        <p><a  style="font-size: smaller;padding: 0;margin-left: 10px;"  href="international_services.html">Travel money</a></p>
+  
+      </div>
+    </div>
+    
+      <button onclick="smallscreen(2)"  id="but1" ><p><b>Borrowing ( Loans and Mortgages) </b></p></button>
+      <div id="smalla2" class="divas2">
+        <div >
+          <p style="color: #1af33bde;">Loan</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="personal-loans.html">personal loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car-loans.html">Car loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="flexible-loan.html">flexiloan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="capitalguard-loan.html">CapitalGuard personal loan</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="graduate-loan.html">Graduate loan</a></p>
+       <hr>
+        <p style="color: #1af33bde;">Mortgages</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="First time buyer.html">First time buyer</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="95percent-Mortgages.html">95% Mortgages</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Remortgage.html">Remortgage</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="buy to let.html">Buy to let</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="mortgage rates.html">Mortgage rates</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="armed forces.html">Armed forces personel</a></p>
+     
+       <hr>
+          <p style="color: #1af33bde;">Credit cards</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">32 month transfer credit card</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Advance Credit Card</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Dual credit card </a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="classic credit card"></a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard credit card</a> </p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">CapitalGuard world elite mastercard</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="Credit-cards.html">Student credit card</a></p>
+       <hr>
+       <p style="color: #1af33bde;" >Services</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Help & Support</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Money worries</a></p>
+          <p style="color: #1af33bde;" >Tools & Guides</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Overpayment calculator</a></p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="borrowingService.html">Base rate information</a></p> 
+          
+        </div>
+      </div>
+
+        <button onclick="smallscreen(3)"  id="but1"><p><b> Investing  (Products and Analysis) </b></p></button>
+        <div id="smalla3" class="divas2">
+          <p style="color: #1af33bde;"> Investments</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="investmentfund.html">Investment Funds</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="WorldselectionISA.html">World Selection ISA</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="sharedealing.html">Sharedealing</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="financial advice.html">CapitalGuard financial advice</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="onshoreinvestment.html">Onshore investment bond</a></p>
+                  <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="child trust fund.html">Child trust fund</a></p>
+      
+      <hr>
+          <p style="color: #1af33bde;">Why invest in us</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="why invest.html">Find out more</a></p>
+      
+        <hr>
+         <p style="color: #1af33bde;" >Customer Support</p>
+          <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="services.html">Getting Started with Investing</a></p>
+    
+        </div>
+
+          <button onclick="smallscreen(4)"  id="but1" ><p><b> Insurance  (Property and family) </b></p>  </button>
+          <div id="smalla4" class="divas2">
+            <p style="color: #1af33bde;">Insurance</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home Insurance</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel Insurance</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="student insurance.html">Student Insurance</a></p>
+  
+          <hr>
+            <p style="color: #1af33bde;">Life Insurance</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Life Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Critical Illness Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="life insurance.html">Income Cover</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;"  href="protection telephone advice.html">Telephone Protection Advice</a></p>
+        
+        <hr>
+        <p style="color: #1af33bde;">Insurance Claims</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="home insurance.html">Home insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+      
+         <hr>
+         <p style="color: #1af33bde;">CapitalGuard Customers</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="travel insurance.html">Travel insurance claims</a></p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="car insurance.html">Car insurance claims</a></p>
+         
+          </div>
+            <button onclick="smallscreen(5)"  id="but1" ><p><b> Life Events   ( Help and Support) </b></p> </button>
+            <div id="smalla5" class="divas2">
+              <p style="color: #1af33bde;">Life Event</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="berievement.html">Bereavement Support</a></p> 
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="seperation.html">Separation Support</a></p>
+            <hr>
+            <p style="color: #1af33bde;">Planning Tools</p>
+            <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Financial Health Check</a> </p>
+            
+              <p style="color: #1af33bde;">Customer Support</p>
+              <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="services.html">Ways we can help</a></p>
+             
+               <p style="color: #1af33bde;">Individual Review</p>
+               <p><a style="font-size: smaller;padding: 0;margin-left: 10px;" href="review.html">Book Your Review Today For a quick <br> <br> Financial Checkup</a></p>
+      </div>
+
+<script src="index.js"></script>
+<script src="student.js"></script>
+
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e587ef1-2546-44bf-a34f-91dd266b8881";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+            </body>
+            </html>
